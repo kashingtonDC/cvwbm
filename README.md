@@ -1,8 +1,8 @@
 ### Geospatial Build
 
-Aakash Ahamed
-Stanford University
-September, 2018
+Aakash Ahamed  
+Stanford University  
+September, 2018  
 
 ### This readme contains instructions to build a geospatial data processing environment which includes:
 
