@@ -14,28 +14,36 @@ import pandas as pd
 
 # Functions
 
-def df_from_imcol(imcol):
-
+def array_from_col(col,band,res,bounds=bounds,year=2017,month=1,day=1):
+    
     '''
-    Takes an earth engine class (ee.ImageCollection) and converts it to a pandas df
-    '''
-
-    df = pd.DataFrame(imcol, columns = imcol[0])
-    df = df[1:]
-
-    return(df)
-
-def array_from_df(df, col_name):
-
-    '''
-    Takes a pandas data frame and converts to a numpy array which can be plotted, ingested, etc
+    Transform an ee.ImageCollection class to a numpy array
     '''
     
-    # get data from df as arrays
-    lons = np.array(df.longitude)
-    lats = np.array(df.latitude)
-    data = np.array(df[col_name])
-    #data = np.array([np.float(x) for x in np.array(df[col_name])]) # Ensure that the data are converted to float
+    # get the lat lon and add the band and scale by the appropriate factor (0.0001 for landsat)
+    band_name = col.select(band).median()
+    latlon = ee.Image.pixelLonLat().addBands(band_name).multiply(0.0001)
+
+    # apply reducer to list
+    latlon = latlon.reduceRegion(
+      reducer=ee.Reducer.toList(),
+      geometry=bounds,
+      maxPixels=1e13,
+      scale=res)
+    
+    data = np.array((ee.Array(latlon.get(band)).getInfo()))
+    lats = np.array((ee.Array(latlon.get("latitude")).getInfo()))
+    lons = np.array((ee.Array(latlon.get("longitude")).getInfo()))
+    
+    arr = array_from_coords(data,lats,lons)
+    
+    return (arr)
+
+def array_from_coords(data,lats,lons):
+    
+    '''
+    Return a numpy array (ie cartesian product) from lats, lons, and data values
+    '''
     
     # get the unique coordinates
     uniqueLats = np.unique(lats)
@@ -50,7 +58,7 @@ def array_from_df(df, col_name):
     xs = uniqueLons[1] - uniqueLons[0]
 
     # create an array with dimensions of image
-    arr = np.zeros([nrows, ncols], np.float16)
+    arr = np.zeros([nrows, ncols], np.float32) #-9999
 
     # fill the array with values
     counter =0
@@ -58,8 +66,6 @@ def array_from_df(df, col_name):
         for x in range(0,len(arr[0]),1):
             if lats[counter] == uniqueLats[y] and lons[counter] == uniqueLons[x] and counter < len(lats)-1:
                 counter+=1
-                arr[len(uniqueLats)-1-y,x] = data[counter] # start from lower left corner
-
-    arr = arr.astype(np.float)
-    
-    return (arr)
+                arr[len(uniqueLats)-1-y,x] = data[counter] 
+                
+    return arr
