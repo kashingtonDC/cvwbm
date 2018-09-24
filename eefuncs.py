@@ -14,7 +14,7 @@ import pandas as pd
 
 # Functions
 
-def array_from_col(col,band,res,bounds=bounds,year=2017,month=1,day=1):
+def array_from_col(col,band,res,bounds,year,month,day):
     
     '''
     Transform an ee.ImageCollection class to a numpy array
