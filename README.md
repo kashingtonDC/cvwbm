@@ -1,10 +1,10 @@
-### Geospatial Build
+# CVWBM
 
 Aakash Ahamed  
 Stanford University  
-September, 2018  
+Creation Date: January 2018  
 
-### This readme contains instructions to build a geospatial data processing environment which includes:
+### This repo contains codes for a remote sensing based central valley water balance model, relying upon: 
 
 - Python 3.6
 - Earth Engine
@@ -13,6 +13,8 @@ September, 2018
 - Tensorflow, Keras, sklearn, other ML libs
 
 This system has been run and tested on MacOS High Sierra 10.13.6
+
+## Build Instructions
 
 ### Download Anaconda3
 [Link to MacOS Anaconda Installers](https://www.anaconda.com/download/#macos)
