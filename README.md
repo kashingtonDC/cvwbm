@@ -1,60 +1,21 @@
-# CVWBM
+# CVWBM main readme
 
-Aakash Ahamed  
-Stanford University  
-Creation Date: January 2018  
+### Lots of materials about the project
+1. Data sources table
+2. Time Periods Table
+3. Links to all the data
+4. etc...
 
-### This repo contains codes for a remote sensing based central valley water balance model, relying upon: 
 
-- Python 3.6
-- Earth Engine
-- GDAL, Geopandas, Rasterio, Fiona, other geospatial libs
-- Numpy, scipy, pandas, other useful python libs
-- Tensorflow, Keras, sklearn, other ML libs
-
-This system has been run and tested on MacOS High Sierra 10.13.6
-
-## Build Instructions
-
-### Download Anaconda3
-[Link to MacOS Anaconda Installers](https://www.anaconda.com/download/#macos)
-
-### Clone this repository
-`git clone https://github.com/kashingtonDC/geospatial_build`
-
-### Create a new conda virtual environment from the env.yml file
+# Download NHD Data : 
 ```
-conda env create -f env.yml
-```
+mkdir nhd
+cd nhd
 
-This will take a while to install the packages. The name of the environment is 'gis', which is specified in the first line of the env.yml file
+curl -o 1802.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/HighResolution/Shape/NHD_H_1802_HU4_Shape.zip && mkdir 1802 && tar -xvf 1802.zip && mv Shape/ 1802/ && rm 1802.zip
 
-Activate the environment:
+curl -o 1803.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/HighResolution/Shape/NHD_H_1803_HU4_Shape.zip && mkdir 1803 && tar -xvf 1803.zip && mv Shape/ 1803/ && rm 1803.zip
+
+curl -o 1804.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/HighResolution/Shape/NHD_H_1804_HU4_Shape.zip && mkdir 1804 && tar -xvf 1804.zip && mv Shape/ 1804/ && rm 1804.zip
 
 ```
-source activate gis
-```
-
-Note that for newer versions of conda, this command may be `conda activate gis`. Then (gis) will be prepended to your path. 
-
-### Now install Tensowflow backend:
-```
-pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.10.1-py3-none-any.whl
-```
-
-### And Keras:
-```
-pip install keras
-```
-
-### Test everything:
-```
-python
-import ee
-import gdal
-import tensorflow as tf
-import keras
-ee.Initialize() # Supply your EE credentials
-```
-
-That's it!
