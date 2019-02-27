@@ -1,6 +1,13 @@
 # CVWBM main readme
 
 
+
+"$\Delta S = Flux_{in} - Flux_{out}$
+
+"$\Delta S = P - ET - Q_{s} - Q_{g}$"
+
+![](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)
+
 ### Lots of materials about the project
 1. Data sources table
 2. Time Periods Table
@@ -8,17 +15,7 @@
 4. etc...
 
 
-# Satellite Data and Descriptions: 
-TODO: Make a table for each variable 
-
-Columns: 
-Product name
-Link
-ImageCollection Tag
-Variable_Name
-scaling_factor
-availability dates 
-
+# Satellite Data
 
 ## ET 
 
@@ -26,13 +23,13 @@ availability dates
     
 |Product   			| ImageCollection 									| Var Name  	| Scaling Factor   	|   Availability	|   URL		|
 |---				|---												|---			|---				|---				|---		|		
-| modis   			| ee.ImageCollection('MODIS/006/MOD16A2') 			| "ET"  		|0.1   				|   2001 - Present	| []()  	|
-| terraclimate  	| ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')  	| "aet"  		|0.1  				|   1980 - Present	| []		|	
-| gridmet eto 		| ee.ImageCollection('IDAHO_EPSCOR/GRIDMET')	  	| "eto"		  	|1				   	|   1980 - Present	| [] 		|
-| gridmet etr 		| ee.ImageCollection('IDAHO_EPSCOR/GRIDMET')	  	| "etr"		  	|1				   	|   1980 - Present	| []		|
-| fldas 	| ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001')   	| "Evap_tavg"  	|86400  			|   1980 - Present	| []		|
-| nldas  	| ee.ImageCollection('NASA/NLDAS/FORA0125_H002')  	|'potential_evaporation'|1		   			|   1980 - Present	| []		|
-| gldas  	| ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H' 		| "Evap_tavg"  	|86400  		  	|   1980 - Present	| []		
+| modis   			| ee.ImageCollection('MODIS/006/MOD16A2') 			| "ET"  		|0.1   				|   2001 - Present	| [link](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD16A2)  	|
+| terraclimate  	| ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')  	| "aet"  		|0.1  				|   1980 - Present	| [link](https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET)		|	
+| gridmet eto 		| ee.ImageCollection('IDAHO_EPSCOR/GRIDMET')	  	| "eto"		  	|1				   	|   1980 - Present	| [link](https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET)		|
+| gridmet etr 		| ee.ImageCollection('IDAHO_EPSCOR/GRIDMET')	  	| "etr"		  	|1				   	|   1980 - Present	| [link]()		|
+| fldas 	| ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001')   	| "Evap_tavg"  	|86400  			|   1980 - Present	| [link](https://developers.google.com/earth-engine/datasets/catalog/NASA_FLDAS_NOAH01_C_GL_M_V001)		|
+| nldas  	| ee.ImageCollection('NASA/NLDAS/FORA0125_H002')  	|'potential_evaporation'|1		   			|   1980 - Present	| [link]		|
+| gldas  	| ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H' 		| "Evap_tavg"  	|86400  		  	|   1980 - Present	| [link]()		
 
 </sub>
 
@@ -40,13 +37,13 @@ availability dates
 
 <sub>
 
-|Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	|
-|---				|---												|---				|---				|---				|
-| trmm   			| ee.ImageCollection('TRMM/3B43V7')					| "precipitation"  	|720  				| 2000 - Present  	|
-| prism  			| ee.ImageCollection('OREGONSTATE/PRISM/AN81m')  	| "ppt"  			|1  				| 1980 - Present 	|
-| chirps 			| ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD')	  	| "precipitation"	|1				   	|   				|
-| persiann			| ee.ImageCollection('NOAA/PERSIANN-CDR')	  		| "precipitation"	|1				   	|   				|
-| daymet 			| ee.ImageCollection('NASA/ORNL/DAYMET_V3')   		| "prcp"  			|1  				|   				|
+|Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	|   URL		|
+|---				|---												|---				|---				|---				|--- 		|
+| trmm   			| ee.ImageCollection('TRMM/3B43V7')					| "precipitation"  	|720  				| 2000 - Present  	|			|
+| prism  			| ee.ImageCollection('OREGONSTATE/PRISM/AN81m')  	| "ppt"  			|1  				| 1980 - Present 	|			|
+| chirps 			| ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD')	  	| "precipitation"	|1				   	|   				|			|
+| persiann			| ee.ImageCollection('NOAA/PERSIANN-CDR')	  		| "precipitation"	|1				   	|   				|			|
+| daymet 			| ee.ImageCollection('NASA/ORNL/DAYMET_V3')   		| "prcp"  			|1  				|   				|			|
 
 </sub>
 
@@ -54,9 +51,9 @@ availability dates
 
 <sub>
     
-Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	| URL
+Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	| URL		|
 |---				|---												|---				|---				|---				|---
-| terraclimate   	| ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')  	| "soil"  			|0.1  				|   1980 - Present	| []		
+| terraclimate   	| ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')  	| "soil"  			|0.1  				|   1980 - Present	| []		|
 </sub>
 
 </sub>
