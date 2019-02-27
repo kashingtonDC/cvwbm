@@ -1,7 +1,6 @@
 # CVWBM main readme
 
-$$\Delta S = Flux_{in} - Flux_{out}$$
-$$\Delta S = P - ET - Q_{s} - Q_{g}$$
+<img src="https://latex.codecogs.com/svg.latex?\Delta S_{gw} = P - ET - Q_{s} - Q_{g} \Delta S_{sm}" title="\Delta S = P - ET - Q_{s} - Q_{g}" />
 
 ![](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)
 
