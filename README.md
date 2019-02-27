@@ -20,7 +20,7 @@ scaling_factor
 availability dates 
 
 ## ET Data
-
+<sub>
 |Product   			| ImageCollection 									| Var Name  	| Scaling Factor   	|   Availability	|   URL		|
 |---				|---												|---			|---				|---				|---		|		
 | modis   			| ee.ImageCollection('MODIS/006/MOD16A2') 			| "ET"  		|0.1   				|   2001 - Present	| []()  	|
@@ -30,10 +30,10 @@ availability dates
 | fldas 	| ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001')   	| "Evap_tavg"  	|86400  			|   1980 - Present	| []		|
 | nldas  	| ee.ImageCollection('NASA/NLDAS/FORA0125_H002')  	|'potential_evaporation'|1		   			|   1980 - Present	| []		|
 | gldas  	| ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H' 		| "Evap_tavg"  	|86400  		  	|   1980 - Present	| []		|
-
+</sub>
 
 ## P Data
-
+<sub>
 |Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	|
 |---				|---												|---				|---				|---				|
 | trmm   			| ee.ImageCollection('TRMM/3B43V7')					| "precipitation"  	|720  				| 2000 - Present  	|
@@ -41,7 +41,7 @@ availability dates
 | chirps 			| ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD')	  	| "precipitation"	|1				   	|   				|
 | persiann			| ee.ImageCollection('NOAA/PERSIANN-CDR')	  		| "precipitation"	|1				   	|   				|
 | daymet 			| ee.ImageCollection('NASA/ORNL/DAYMET_V3')   		| "prcp"  			|1  				|   				|
-
+</sub>
 
 ## SM Data
 
@@ -52,6 +52,8 @@ Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Av
 
 
 ```
+
+asdf
 ###################
 ##### ET data #####
 ###################
