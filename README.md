@@ -20,7 +20,7 @@ scaling_factor
 availability dates 
 
 ## ET Data
-<sub>
+
 |Product   			| ImageCollection 									| Var Name  	| Scaling Factor   	|   Availability	|   URL		|
 |---				|---												|---			|---				|---				|---		|		
 | modis   			| ee.ImageCollection('MODIS/006/MOD16A2') 			| "ET"  		|0.1   				|   2001 - Present	| []()  	|
@@ -33,7 +33,6 @@ availability dates
 </sub>
 
 ## P Data
-<sub>
 |Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	|
 |---				|---												|---				|---				|---				|
 | trmm   			| ee.ImageCollection('TRMM/3B43V7')					| "precipitation"  	|720  				| 2000 - Present  	|
@@ -48,7 +47,7 @@ availability dates
 Product   			| ImageCollection 									| Var Name  		| Scaling Factor   	|   Availability	| URL
 |---				|---												|---				|---				|---				|---
 | terraclimate   	| ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')  	| "soil"  			|0.1  				|   1980 - Present	| []		|	
-
+</sub>
 
 
 ```
