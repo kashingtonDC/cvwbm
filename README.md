@@ -4,13 +4,6 @@
 
 ![](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)
 
-### Lots of materials about the project
-1. Data sources table
-2. Time Periods Table
-3. Links to all the data
-4. etc...
-
-
 # Satellite Data
 
 ## ET 
