@@ -1,0 +1,516 @@
+Basin_Subbasin_Number,Basin_Subbasin_Name,Total_Priority_Points,Priority,Priority_Change_2014_to_2018
+1-001,Smith River Plain,0,Very Low,M/H to L/VL
+1-002.01,Klamath River Valley - Tulelake,16.5,Medium,No Change
+1-002.02,Klamath River Valley - Lower Klamath,0,Very Low,No Change
+1-003,Butte Valley,15.5,Medium,No Change
+1-004,Shasta Valley - Shasta Valley,Pending,Pending,Pending
+1-005,Scott River Valley,18,Medium,No Change
+1-006,Hayfork Valley,0,Very Low,No Change
+1-007,Hoopa Valley,0,Very Low,No Change
+1-008.01,Mad River Valley - Mad River Lowland,0,Very Low,No Change
+1-008.02,Mad River Valley - Dows Prairie School Area,0,Very Low,No Change
+1-009,Eureka Plain,0,Very Low,No Change
+1-010,Eel River Valley,14.5,Medium,No Change
+1-011,Covelo Round Valley,0,Very Low,No Change
+1-012,Laytonville Valley,0,Very Low,No Change
+1-013,Little Lake Valley,0,Very Low,No Change
+1-014,Lower Klamath River Valley,0,Very Low,No Change
+1-015,Happy Camp Town Area,0,Very Low,No Change
+1-016,Seiad Valley,0,Very Low,No Change
+1-017,Bray Town Area,0,Very Low,No Change
+1-018,Red Rock Valley,11,Low,No Change
+1-019,Anderson Valley,0,Very Low,No Change
+1-020,Garcia River Valley,0,Very Low,No Change
+1-021,Fort Bragg Terrace Area,0,Very Low,No Change
+1-022,Fairchild Swamp Valley,0,Very Low,No Change
+1-025,Prairie Creek Area,0,Very Low,No Change
+1-026,Redwood Creek Area,0,Very Low,No Change
+1-027,Big Lagoon Area,0,Very Low,No Change
+1-028,Mattole River Valley,0,Very Low,No Change
+1-029,Honeydew Town Area,0,Very Low,No Change
+1-030,Pepperwood Town Area,0,Very Low,No Change
+1-031,Weott Town Area,0,Very Low,No Change
+1-032,Garberville Town Area,0,Very Low,No Change
+1-033,Larabee Valley,0,Very Low,No Change
+1-034,Dinsmores Town Area,0,Very Low,No Change
+1-035,Hyampom Valley,0,Very Low,No Change
+1-036,Hettenshaw Valley,0,Very Low,No Change
+1-037,Cottoneva Creek Valley,0,Very Low,No Change
+1-038,Lower Laytonville Valley,0,Very Low,No Change
+1-039,Branscomb Town Area,0,Very Low,No Change
+1-040,Ten Mile River Valley,0,Very Low,No Change
+1-041,Little Valley,0,Very Low,No Change
+1-042,Sherwood Valley,0,Very Low,No Change
+1-043,Williams Valley,0,Very Low,No Change
+1-044,Eden Valley,0,Very Low,No Change
+1-045,Big River Valley,0,Very Low,No Change
+1-046,Navarro River Valley,0,Very Low,No Change
+1-048,Gravelly Valley,0,Very Low,No Change
+1-049,Annapolis Ohlson Ranch Fm Highlands,0,Very Low,No Change
+1-050,Knights Valley,0,Very Low,No Change
+1-051,Potter Valley,0,Very Low,No Change
+1-052,Ukiah Valley,19.5,Medium,No Change
+1-053,Sanel Valley,0,Very Low,No Change
+1-054.01,Alexander Valley - Alexander Area,0,Very Low,No Change
+1-054.02,Alexander Valley - Cloverdale Area,0,Very Low,No Change
+1-055.01,Santa Rosa Valley - Santa Rosa Plain,Pending,Pending,Pending
+1-055.02,Santa Rosa Valley - Healdsburg Area,0,Very Low,No Change
+1-055.03,Santa Rosa Valley - Rincon Valley,0,Very Low,No Change
+1-056,Mcdowell Valley,0,Very Low,No Change
+1-057,Bodega Bay Area,0,Very Low,No Change
+1-059,Wilson Grove Formation Highlands,Pending,Pending,Pending
+1-060,Lower Russian River Valley,0,Very Low,No Change
+1-061,Fort Ross Terrace Deposits,0,Very Low,No Change
+1-062,Wilson Point Area,0,Very Low,No Change
+2-001,Petaluma Valley,Pending,Pending,Pending
+2-002.01,Napa-Sonoma Valley - Napa Valley,22,High,No Change
+2-002.02,Napa-Sonoma Valley - Sonoma Valley,Pending,Pending,Pending
+2-002.03,Napa-Sonoma Valley - Napa-Sonoma Lowlands,Pending,Pending,Pending
+2-003,Suisun-Fairfield Valley,11.5,Low,No Change
+2-004,Pittsburg Plain,0,Very Low,No Change
+2-005,Clayton Valley,0,Very Low,No Change
+2-006,Ygnacio Valley,0,Very Low,No Change
+2-007,San Ramon Valley,0,Very Low,No Change
+2-008,Castro Valley,0,Very Low,No Change
+2-009.01,Santa Clara Valley - Niles Cone,18,Medium,No Change
+2-009.02,Santa Clara Valley - Santa Clara,24.5,High,No Change
+2-009.03,Santa Clara Valley - San Mateo Plain,0,Very Low,No Change
+2-009.04,Santa Clara Valley - East Bay Plain,17,Medium,No Change
+2-010,Livermore Valley,16,Medium,No Change
+2-011,Sunol Valley,0,Very Low,No Change
+2-019,Kenwood Valley,0,Very Low,No Change
+2-022,Half Moon Bay Terrace,0,Very Low,No Change
+2-024,San Gregorio Valley,0,Very Low,No Change
+2-026,Pescadero Valley,0,Very Low,No Change
+2-027,Sand Point Area,Pending,Pending,Pending
+2-028,Ross Valley,0,Very Low,No Change
+2-029,San Rafael Valley,0,Very Low,No Change
+2-030,Novato Valley,14,Low,No Change
+2-031,Arroyo Del Hambre Valley,0,Very Low,No Change
+2-032,Visitacion Valley,0,Very Low,No Change
+2-033,Islais Valley,0,Very Low,No Change
+2-035,Westside,0,Very Low,No Change
+2-036,San Pedro Valley,0,Very Low,No Change
+2-037,South San Francisco,0,Very Low,No Change
+2-038,Lobos,0,Very Low,No Change
+2-039,Marina,0,Very Low,No Change
+2-040,Downtown,0,Very Low,No Change
+3-001,Santa Cruz Mid-County,40,High,No Change
+3-002.01,Corralitos - Pajaro Valley,40,High,No Change
+3-002.02,Corralitos - Purisima Highlands,0,Very Low,M/H to L/VL
+3-003.01,Gilroy-Hollister Valley - Llagas Area,24,High,No Change
+3-003.05,Gilroy-Hollister Valley - North San Benito,Pending,Pending,Pending
+3-004.01,Salinas Valley - 180/400 Foot Aquifer,40,High,No Change
+3-004.02,Salinas Valley - East Side Aquifer,27,High,No Change
+3-004.04,Salinas Valley - Forebay Aquifer,21,Medium,No Change
+3-004.05,Salinas Valley - Upper Valley Aquifer,Pending,Pending,Pending
+3-004.06,Salinas Valley - Paso Robles Area,Pending,Pending,Pending
+3-004.08,Salinas Valley - Seaside Area,0,Very Low,M/H to L/VL
+3-004.09,Salinas Valley - Langley Area,23,High,No Change
+3-004.10,Salinas Valley - Corral De Tierra Area,20.5,Medium,No Change
+3-004.11,Salinas Valley - Atascadero Area,0,Very Low,M/H to L/VL
+3-005,Cholame Valley,0,Very Low,No Change
+3-006,Lockwood Valley,0,Very Low,No Change
+3-007,Carmel Valley,20.5,Medium,No Change
+3-008.01,Los Osos Valley - Los Osos Area,Pending,Pending,Pending
+3-008.02,Los Osos Valley - Warden Creek,Pending,Pending,Pending
+3-009,San Luis Obispo Valley,21.5,High,No Change
+3-012.01,Santa Maria - Santa Maria  ,Pending,Pending,Pending
+3-012.02,Santa Maria - Arroyo Grande,Pending,Pending,Pending
+3-013,Cuyama Valley,40,High,No Change
+3-014,San Antonio Creek Valley,15,Medium,No Change
+3-015,Santa Ynez River Valley,15,Medium,No Change
+3-016,Goleta,0,Very Low,M/H to L/VL
+3-017,Santa Barbara,0,Very Low,No Change
+3-018,Carpinteria,Pending,Pending,Pending
+3-019,Carrizo Plain,0,Very Low,No Change
+3-020,Ano Nuevo Area,0,Very Low,No Change
+3-022,Santa Ana Valley,0,Very Low,No Change
+3-023,Upper Santa Ana Valley,0,Very Low,No Change
+3-024,Quien Sabe Valley,0,Very Low,No Change
+3-026,West Santa Cruz Terrace,0,Very Low,M/H to L/VL
+3-027,Santa Margarita,16.5,Medium,No Change
+3-028,San Benito River Valley,0,Very Low,No Change
+3-029,Dry Lake Valley,0,Very Low,No Change
+3-030,Bitter Water Valley,0,Very Low,No Change
+3-031,Hernandez Valley,0,Very Low,No Change
+3-032,Peach Tree Valley,0,Very Low,No Change
+3-033,San Carpoforo Valley,0,Very Low,No Change
+3-034,Arroyo De La Cruz Valley,0,Very Low,No Change
+3-035,San Simeon Valley,0,Very Low,No Change
+3-036,Santa Rosa Valley,0,Very Low,No Change
+3-037,Villa Valley,0,Very Low,No Change
+3-038,Cayucos Valley,0,Very Low,No Change
+3-039,Old Valley,0,Very Low,No Change
+3-040,Toro Valley,0,Very Low,No Change
+3-041,Morro Valley,0,Very Low,No Change
+3-042,Chorro Valley,0,Very Low,No Change
+3-043,Rinconada Valley,0,Very Low,No Change
+3-044,Pozo Valley,0,Very Low,No Change
+3-045,Huasna Valley,0,Very Low,No Change
+3-046,Rafael Valley,0,Very Low,No Change
+3-047,Big Spring Area,0,Very Low,No Change
+3-049,Montecito,Pending,Pending,Pending
+3-051,Majors Creek,0,Very Low,No Change
+3-052,Needle Rock Point,0,Very Low,No Change
+3-053,Foothill,0,Very Low,No Change
+4-001,Upper Ojai Valley,0,Very Low,No Change
+4-002,Ojai Valley,22.5,High,No Change
+4-003.01,Ventura River Valley - Upper Ventura River,18.5,Medium,No Change
+4-003.02,Ventura River Valley - Lower Ventura River,0,Very Low,No Change
+4-004.02,Santa Clara River Valley - Oxnard,Pending,Pending,Pending
+4-004.03,Santa Clara River Valley - Mound,Pending,Pending,Pending
+4-004.04,Santa Clara River Valley - Santa Paula,Pending,Pending,Pending
+4-004.05,Santa Clara River Valley - Fillmore,Pending,Pending,Pending
+4-004.06,Santa Clara River Valley - Piru,Pending,Pending,Pending
+4-004.07,Santa Clara River Valley - Santa Clara River Valley East,22,High,No Change
+4-005,Acton Valley,0,Very Low,No Change
+4-006,Pleasant Valley,40,High,No Change
+4-007,Arroyo Santa Rosa Valley,Pending,Pending,Pending
+4-008,Las Posas Valley,27,High,No Change
+4-009,Simi Valley,0,Very Low,No Change
+4-010,Conejo,0,Very Low,No Change
+4-011.01,Coastal Plain Of Los Angeles - Santa Monica,17.5,Medium,No Change
+4-011.02,Coastal Plain Of Los Angeles - Hollywood,0,Very Low,No Change
+4-011.03,Coastal Plain Of Los Angeles - West Coast,0,Very Low,M/H to L/VL
+4-011.04,Coastal Plain Of Los Angeles - Central,0,Very Low,M/H to L/VL
+4-012,San Fernando Valley,0,Very Low,M/H to L/VL
+4-013,San Gabriel Valley,0,Very Low,M/H to L/VL
+4-015,Tierra Rejada,0,Very Low,No Change
+4-016,Hidden Valley,0,Very Low,No Change
+4-017,Lockwood Valley,0,Very Low,No Change
+4-018,Hungry Valley,0,Very Low,No Change
+4-019,Thousand Oaks Area,0,Very Low,No Change
+4-020,Russell Valley,0,Very Low,No Change
+4-022,Malibu Valley,0,Very Low,No Change
+4-023,Raymond,0,Very Low,M/H to L/VL
+5-001.01,Goose Lake - Goose Valley,7,Very Low,No Change
+5-001.02,Goose Lake - Fandango Valley,0,Very Low,No Change
+5-002.01,Alturas Area - South Fork Pitt River,9,Low,No Change
+5-002.02,Alturas Area - Warm Springs Valley,0,Very Low,No Change
+5-003,Jess Valley,0,Very Low,No Change
+5-004,Big Valley,14.5,Medium,No Change
+5-005,Fall River Valley,12.5,Low,No Change
+5-006.01,Redding Area - Bowman,Pending,Pending,Pending
+5-006.03,Redding Area - Anderson,17,Medium,No Change
+5-006.04,Redding Area - Enterprise,18,Medium,No Change
+5-006.05,Redding Area - Millville,Pending,Pending,Pending
+5-006.06,Redding Area - South Battle Creek,Pending,Pending,Pending
+5-007,Lake Almanor Valley,0,Very Low,No Change
+5-008,Mountain Meadows Valley,0,Very Low,No Change
+5-009,Indian Valley,0,Very Low,No Change
+5-010,American Valley,0,Very Low,No Change
+5-011,Mohawk Valley,0,Very Low,No Change
+5-012.01,Sierra Valley - Sierra Valley,Pending,Pending,Pending
+5-012.02,Sierra Valley - Chilcoot,0,Very Low,No Change
+5-013,Upper Lake Valley,0,Very Low,No Change
+5-014,Scotts Valley,0,Very Low,M/H to L/VL
+5-015,Big Valley,20,Medium,No Change
+5-016,High Valley,0,Very Low,No Change
+5-017,Burns Valley,0,Very Low,No Change
+5-018,Coyote Valley,0,Very Low,No Change
+5-019,Collayomi Valley,0,Very Low,No Change
+5-020,Berryessa Valley,0,Very Low,No Change
+5-021.50,Sacramento Valley - Red Bluff,20,Medium,No Change
+5-021.51,Sacramento Valley - Corning,Pending,Pending,Pending
+5-021.52,Sacramento Valley - Colusa,Pending,Pending,Pending
+5-021.53,Sacramento Valley - Bend,0,Very Low,No Change
+5-021.54,Sacramento Valley - Antelope,24,High,No Change
+5-021.56,Sacramento Valley - Los Molinos,Pending,Pending,Pending
+5-021.57,Sacramento Valley - Vina,Pending,Pending,Pending
+5-021.60,Sacramento Valley - North Yuba,Pending,Pending,Pending
+5-021.61,Sacramento Valley - South Yuba,Pending,Pending,Pending
+5-021.62,Sacramento Valley - Sutter,Pending,Pending,Pending
+5-021.64,Sacramento Valley - North American,Pending,Pending,Pending
+5-021.65,Sacramento Valley - South American,Pending,Pending,Pending
+5-021.66,Sacramento Valley - Solano,Pending,Pending,Pending
+5-021.67,Sacramento Valley - Yolo,Pending,Pending,Pending
+5-021.69,Sacramento Valley - Wyandotte Creek,Pending,Pending,Pending
+5-021.70,Sacramento Valley - Butte,Pending,Pending,Pending
+5-022.01,San Joaquin Valley - Eastern San Joaquin,Pending,Pending,Pending
+5-022.02,San Joaquin Valley - Modesto,24.5,High,No Change
+5-022.03,San Joaquin Valley - Turlock,26,High,No Change
+5-022.04,San Joaquin Valley - Merced,40,High,No Change
+5-022.05,San Joaquin Valley - Chowchilla,Pending,Pending,Pending
+5-022.06,San Joaquin Valley - Madera,Pending,Pending,Pending
+5-022.07,San Joaquin Valley - Delta-Mendota,Pending,Pending,Pending
+5-022.08,San Joaquin Valley - Kings,Pending,Pending,Pending
+5-022.09,San Joaquin Valley - Westside,40,High,No Change
+5-022.10,San Joaquin Valley - Pleasant Valley,20,Medium,L/VL to M/H
+5-022.11,San Joaquin Valley - Kaweah,40,High,No Change
+5-022.12,San Joaquin Valley - Tulare Lake,40,High,No Change
+5-022.13,San Joaquin Valley - Tule,40,High,No Change
+5-022.14,San Joaquin Valley - Kern County,Pending,Pending,Pending
+5-022.15,San Joaquin Valley - Tracy,Pending,Pending,Pending
+5-022.16,San Joaquin Valley - Cosumnes,Pending,Pending,Pending
+5-022.17,San Joaquin Valley - Kettleman Plain,10,Low,No Change
+5-022.18,San Joaquin Valley - White Wolf,15,Medium,No Change
+5-022.19,San Joaquin Valley - East Contra Costa,Pending,Pending,Pending
+5-023,Panoche Valley,0,Very Low,No Change
+5-025,Kern River Valley,0,Very Low,No Change
+5-026,Walker Basin Creek Valley,0,Very Low,No Change
+5-027,Cummings Valley,0,Very Low,M/H to L/VL
+5-028,Tehachapi Valley West,0,Very Low,M/H to L/VL
+5-029,Castac Lake Valley,0,Very Low,No Change
+5-030,Lower Lake Valley,0,Very Low,No Change
+5-031,Long Valley,0,Very Low,No Change
+5-035,Mccloud Area,0,Very Low,No Change
+5-036,Round Valley,0,Very Low,No Change
+5-037,Toad Well Area,0,Very Low,No Change
+5-038,Pondosa Town Area,0,Very Low,No Change
+5-040,Hot Springs Valley,0,Very Low,No Change
+5-041,Egg Lake Valley,0,Very Low,No Change
+5-043,Rock Prairie Valley,0,Very Low,No Change
+5-044,Long Valley,0,Very Low,No Change
+5-045,Cayton Valley,0,Very Low,No Change
+5-046,Lake Britton Area,0,Very Low,No Change
+5-047,Goose Valley,0,Very Low,No Change
+5-048,Burney Creek Valley,0,Very Low,No Change
+5-049,Dry Burney Creek Valley,0,Very Low,No Change
+5-050,North Fork Battle Creek,0,Very Low,No Change
+5-051,Butte Creek Valley,0,Very Low,No Change
+5-052,Grays Valley,0,Very Low,No Change
+5-053,Dixie Valley,0,Very Low,No Change
+5-054,Ash Valley,0,Very Low,No Change
+5-056,Yellow Creek Valley,0,Very Low,No Change
+5-057,Last Chance Creek Valley,0,Very Low,No Change
+5-058,Clover Valley,0,Very Low,No Change
+5-059,Grizzly Valley,0,Very Low,No Change
+5-060,Humbug Valley,0,Very Low,No Change
+5-061,Chrome Town Area,0,Very Low,No Change
+5-062,Elk Creek Area,0,Very Low,No Change
+5-063,Stonyford Town Area,0,Very Low,No Change
+5-064,Bear Valley,0,Very Low,No Change
+5-065,Little Indian Valley,0,Very Low,No Change
+5-066,Clear Lake Cache Formation,0,Very Low,No Change
+5-068,Pope Valley,0,Very Low,No Change
+5-069,Yosemite Valley,0,Very Low,No Change
+5-070,Los Banos Creek Valley,0,Very Low,No Change
+5-071,Vallecitos Creek Valley,0,Very Low,No Change
+5-080,Brite Valley,0,Very Low,No Change
+5-082,Cuddy Canyon Valley,0,Very Low,No Change
+5-083,Cuddy Ranch Area,0,Very Low,No Change
+5-084,Cuddy Valley,0,Very Low,No Change
+5-085,Mil Potrero Area,0,Very Low,No Change
+5-086,Joseph Creek,0,Very Low,No Change
+5-087,Middle Fork Feather River,0,Very Low,No Change
+5-088,Stony Gorge Reservoir,0,Very Low,No Change
+5-089,Squaw Flat,0,Very Low,No Change
+5-090,Funks Creek,0,Very Low,No Change
+5-091,Antelope Creek,0,Very Low,No Change
+5-092,Blanchard Valley,0,Very Low,No Change
+5-094,Middle Creek,0,Very Low,No Change
+5-095,Meadow Valley,0,Very Low,No Change
+6-001,Surprise Valley,6,Very Low,No Change
+6-002,Madeline Plains,5,Very Low,No Change
+6-003,Willow Creek Valley,0,Very Low,No Change
+6-004,Honey Lake Valley,7.5,Low,No Change
+6-005.01,Tahoe Valley - Tahoe South,20,Medium,No Change
+6-005.02,Tahoe Valley - Tahoe West,0,Very Low,No Change
+6-005.03,Tahoe Valley - Tahoe North,0,Very Low,No Change
+6-006,Carson Valley,0,Very Low,No Change
+6-007,Antelope Valley,0,Very Low,No Change
+6-008,Bridgeport Valley,0,Very Low,No Change
+6-009,Mono Valley,0,Very Low,No Change
+6-010,Adobe Lake Valley,0,Very Low,No Change
+6-011,Long Valley,0,Very Low,No Change
+6-012.01,Owens Valley - Owens Valley,Pending,Pending,Pending
+6-012.02,Owens Valley - Fish Slough,0,Very Low,No Change
+6-013,Black Springs Valley,0,Very Low,No Change
+6-014,Fish Lake Valley,9,Low,No Change
+6-015,Deep Springs Valley,0,Very Low,No Change
+6-016,Eureka Valley,0,Very Low,No Change
+6-017,Saline Valley,0,Very Low,No Change
+6-018,Death Valley,0,Very Low,No Change
+6-019,Wingate Valley,0,Very Low,No Change
+6-020,Middle Amargosa Valley,0,Very Low,No Change
+6-021,Lower Kingston Valley,0,Very Low,No Change
+6-022,Upper Kingston Valley,0,Very Low,No Change
+6-023,Riggs Valley,0,Very Low,No Change
+6-024,Red Pass Valley,0,Very Low,No Change
+6-025,Bicycle Valley,0,Very Low,No Change
+6-026,Avawatz Valley,0,Very Low,No Change
+6-027,Leach Valley,0,Very Low,No Change
+6-028,Pahrump Valley,0,Very Low,No Change
+6-029,Mesquite Valley,5.5,Very Low,No Change
+6-030,Ivanpah Valley,0,Very Low,No Change
+6-031,Kelso Valley,0,Very Low,No Change
+6-032,Broadwell Valley,0,Very Low,No Change
+6-033,Soda Lake Valley,0,Very Low,No Change
+6-034,Silver Lake Valley,0,Very Low,No Change
+6-035,Cronise Valley,0,Very Low,No Change
+6-036.01,Langford Valley - Langford Well Lake,0,Very Low,No Change
+6-036.02,Langford Valley - Irwin,0,Very Low,No Change
+6-037,Coyote Lake Valley,0,Very Low,No Change
+6-038,Caves Canyon Valley,0,Very Low,No Change
+6-040,Lower Mojave River Valley,0,Very Low,M/H to L/VL
+6-041,Middle Mojave River Valley,0,Very Low,No Change
+6-042,Upper Mojave River Valley,0,Very Low,M/H to L/VL
+6-043,El Mirage Valley,0,Very Low,M/H to L/VL
+6-044,Antelope Valley,0,Very Low,M/H to L/VL
+6-045,Tehachapi Valley East,0,Very Low,No Change
+6-046,Fremont Valley,7.5,Low,No Change
+6-047,Harper Valley,0,Very Low,No Change
+6-048,Goldstone Valley,0,Very Low,No Change
+6-049,Superior Valley,0,Very Low,No Change
+6-050,Cuddeback Valley,0,Very Low,No Change
+6-051,Pilot Knob Valley,0,Very Low,No Change
+6-052,Searles Valley,0,Very Low,No Change
+6-053,Salt Wells Valley,0,Very Low,No Change
+6-054,Indian Wells Valley,40,High,No Change
+6-055,Coso Valley,0,Very Low,No Change
+6-056,Rose Valley,0,Very Low,No Change
+6-057,Darwin Valley,0,Very Low,No Change
+6-058,Panamint Valley,0,Very Low,No Change
+6-061,Cameo Area,0,Very Low,No Change
+6-062,Race Track Valley,0,Very Low,No Change
+6-063,Hidden Valley,0,Very Low,No Change
+6-064,Marble Canyon Area,0,Very Low,No Change
+6-065,Cottonwood Spring Area,0,Very Low,No Change
+6-066,Lee Flat,0,Very Low,No Change
+6-067,Martis Valley,0,Very Low,M/H to L/VL
+6-068,Santa Rosa Flat,0,Very Low,No Change
+6-069,Kelso Lander Valley,0,Very Low,No Change
+6-070,Cactus Flat,0,Very Low,No Change
+6-071,Lost Lake Valley,0,Very Low,No Change
+6-072,Coles Flat,0,Very Low,No Change
+6-073,Wild Horse Mesa Area,0,Very Low,No Change
+6-074,Harrisburg Flats,0,Very Low,No Change
+6-075,Wildrose Canyon,0,Very Low,No Change
+6-076,Brown Mountain Valley,0,Very Low,No Change
+6-077,Grass Valley,0,Very Low,No Change
+6-078,Denning Spring Valley,0,Very Low,No Change
+6-079,California Valley,0,Very Low,No Change
+6-080,Middle Park Canyon,0,Very Low,No Change
+6-081,Butte Valley,0,Very Low,No Change
+6-082,Spring Canyon Valley,0,Very Low,No Change
+6-084,Greenwater Valley,0,Very Low,No Change
+6-085,Gold Valley,0,Very Low,No Change
+6-086,Rhodes Hill Area,0,Very Low,No Change
+6-088,Owl Lake Valley,0,Very Low,No Change
+6-089,Kane Wash Area,0,Very Low,No Change
+6-090,Cady Fault Area,0,Very Low,No Change
+6-091,Cow Head Lake Valley,0,Very Low,No Change
+6-092,Pine Creek Valley,0,Very Low,No Change
+6-093,Harvey Valley,0,Very Low,No Change
+6-094,Grasshopper Valley,0,Very Low,No Change
+6-095,Dry Valley,0,Very Low,No Change
+6-096,Eagle Lake Area,0,Very Low,No Change
+6-097,Horse Lake Valley,0,Very Low,No Change
+6-098,Tuledad Canyon Valley,0,Very Low,No Change
+6-099,Painters Flat,0,Very Low,No Change
+6-100,Secret Valley,0,Very Low,No Change
+6-101,Bull Flat,0,Very Low,No Change
+6-104,Long Valley,0,Very Low,No Change
+6-105,Slinkard Valley,0,Very Low,No Change
+6-106,Little Antelope Valley,0,Very Low,No Change
+6-107,Sweetwater Flat,0,Very Low,No Change
+6-108,Olympic Valley,0,Very Low,No Change
+7-001,Lanfair Valley,0,Very Low,No Change
+7-002,Fenner Valley,0,Very Low,No Change
+7-003,Ward Valley,0,Very Low,No Change
+7-004,Rice Valley,0,Very Low,No Change
+7-005,Chuckwalla Valley,0,Very Low,No Change
+7-006,Pinto Valley,0,Very Low,No Change
+7-007,Cadiz Valley,0,Very Low,No Change
+7-008,Bristol Valley,0,Very Low,No Change
+7-009,Dale Valley,0,Very Low,No Change
+7-010,Twentynine Palms Valley,0,Very Low,No Change
+7-011,Copper Mountain Valley,0,Very Low,No Change
+7-012,Warren Valley,Pending,Pending,Pending
+7-013.01,Deadman Valley - Deadman Lake,0,Very Low,No Change
+7-013.02,Deadman Valley - Surprise Spring,0,Very Low,No Change
+7-014,Lavic Valley,0,Very Low,No Change
+7-015,Bessemer Valley,0,Very Low,No Change
+7-016,Ames Valley,0,Very Low,No Change
+7-017,Means Valley,0,Very Low,No Change
+7-018.01,Johnson Valley - Soggy Lake,0,Very Low,No Change
+7-018.02,Johnson Valley - Upper Johnson Valley,0,Very Low,No Change
+7-019,Lucerne Valley,0,Very Low,No Change
+7-020,Morongo Valley,0,Very Low,No Change
+7-021.01,Coachella Valley - Indio,20,Medium,No Change
+7-021.02,Coachella Valley - Mission Creek,17.5,Medium,No Change
+7-021.03,Coachella Valley - Desert Hot Springs,0,Very Low,No Change
+7-021.04,Coachella Valley - San Gorgonio Pass,17.5,Medium,No Change
+7-022,West Salton Sea,0,Very Low,No Change
+7-024.01,Borrego Valley - Borrego Springs,40,High,No Change
+7-024.02,Borrego Valley - Ocotillo Wells,0,Very Low,M/H to L/VL
+7-025,Ocotillo-Clark Valley,0,Very Low,No Change
+7-026,Terwilliger Valley,0,Very Low,No Change
+7-027,San Felipe Valley,0,Very Low,No Change
+7-028,Vallecito-Carrizo Valley,0,Very Low,No Change
+7-029,Coyote Wells Valley,0,Very Low,No Change
+7-030,Imperial Valley,0,Very Low,No Change
+7-031,Orocopia Valley,0,Very Low,No Change
+7-032,Chocolate Valley,0,Very Low,No Change
+7-033,East Salton Sea,0,Very Low,No Change
+7-034,Amos Valley,0,Very Low,No Change
+7-035,Ogilby Valley,0,Very Low,No Change
+7-036,Yuma Valley,0,Very Low,No Change
+7-037,Arroyo Seco Valley,0,Very Low,No Change
+7-038,Palo Verde Valley,0,Very Low,No Change
+7-039,Palo Verde Mesa,0,Very Low,No Change
+7-040,Quien Sabe Point Valley,0,Very Low,No Change
+7-041,Calzona Valley,0,Very Low,No Change
+7-042,Vidal Valley,0,Very Low,No Change
+7-043,Chemehuevi Valley,0,Very Low,No Change
+7-044,Needles Valley,0,Very Low,No Change
+7-045,Piute Valley,0,Very Low,No Change
+7-046,Canebrake Valley,0,Very Low,No Change
+7-047,Jacumba Valley,0,Very Low,No Change
+7-048,Helendale Fault Valley,0,Very Low,No Change
+7-049,Pipes Canyon Fault Valley,0,Very Low,No Change
+7-050,Iron Ridge Area,0,Very Low,No Change
+7-051,Lost Horse Valley,0,Very Low,No Change
+7-052,Pleasant Valley,0,Very Low,No Change
+7-053,Hexie Mountain Area,0,Very Low,No Change
+7-054,Buck Ridge Fault Valley,0,Very Low,No Change
+7-055,Collins Valley,0,Very Low,No Change
+7-056,Yaqui Well Area,0,Very Low,No Change
+7-059,Mason Valley,0,Very Low,No Change
+7-061,Davies Valley,0,Very Low,No Change
+7-062,Joshua Tree,Pending,Pending,Pending
+7-063,Vandeventer Flat,0,Very Low,No Change
+8-001,Coastal Plain Of Orange County,19.5,Medium,No Change
+8-002.01,Upper Santa Ana Valley - Chino,0,Very Low,M/H to L/VL
+8-002.02,Upper Santa Ana Valley - Cucamonga,0,Very Low,M/H to L/VL
+8-002.03,Upper Santa Ana Valley - Riverside-Arlington,0,Very Low,M/H to L/VL
+8-002.04,Upper Santa Ana Valley - Rialto-Colton,0,Very Low,M/H to L/VL
+8-002.05,Upper Santa Ana Valley - Cajon,0,Very Low,No Change
+8-002.06,Upper Santa Ana Valley - San Bernardino,0,Very Low,M/H to L/VL
+8-002.07,Upper Santa Ana Valley - Yucaipa,24,High,No Change
+8-002.08,Upper Santa Ana Valley - San Timoteo,Pending,Pending,Pending
+8-002.09,Upper Santa Ana Valley - Temescal,17.5,Medium,No Change
+8-004.01,Elsinore - Elsinore Valley,15,Medium,No Change
+8-004.02,Elsinore - Bedford-Coldwater,0,Very Low,M/H to L/VL
+8-005,San Jacinto,Pending,Pending,Pending
+8-006,Hemet Lake Valley,0,Very Low,No Change
+8-007,Big Meadows Valley,0,Very Low,No Change
+8-008,Seven Oaks Valley,0,Very Low,No Change
+8-009,Bear Valley,0,Very Low,M/H to L/VL
+9-001,San Juan Valley,0,Very Low,No Change
+9-002,San Mateo Valley,0,Very Low,No Change
+9-003,San Onofre Valley,0,Very Low,No Change
+9-004,Santa Margarita Valley,0,Very Low,M/H to L/VL
+9-005,Temecula Valley,0,Very Low,M/H to L/VL
+9-006,Cahuilla Valley,0,Very Low,M/H to L/VL
+9-007.01,San Luis Rey Valley - Upper San Luis Rey Valley,Pending,Pending,Pending
+9-007.02,San Luis Rey Valley - Lower San Luis Rey Valley,Pending,Pending,Pending
+9-008,Warner Valley,0,Very Low,No Change
+9-009,Escondido Valley,0,Very Low,No Change
+9-010,San Pasqual Valley,19,Medium,No Change
+9-011,Santa Maria Valley,0,Very Low,No Change
+9-012,San Dieguito Creek,0,Very Low,No Change
+9-013,Poway Valley,0,Very Low,No Change
+9-014,Mission Valley,0,Very Low,No Change
+9-015,San Diego River Valley,Pending,Pending,Pending
+9-016,El Cajon Valley,0,Very Low,No Change
+9-022,Batiquitos Lagoon Valley,0,Very Low,No Change
+9-023,San Elijo Valley,0,Very Low,No Change
+9-024,Pamo Valley,0,Very Low,No Change
+9-025,Ranchita Town Area,0,Very Low,No Change
+9-027,Cottonwood Valley,0,Very Low,No Change
+9-028,Campo Valley,0,Very Low,No Change
+9-029,Potrero Valley,0,Very Low,No Change
+9-032,San Marcos Area,0,Very Low,No Change
+9-033,Coastal Plain Of San Diego,Pending,Pending,Pending
