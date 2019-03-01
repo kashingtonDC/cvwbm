@@ -4,8 +4,6 @@
 
 [![](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)](#)
 
-<a href="#"><img src="https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png" /></a>
-
 # Satellite Data
 
 ## ET 
