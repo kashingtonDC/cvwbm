@@ -2,7 +2,9 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;S&space;=&space;P&space;-&space;ET&space;-&space;Q_{s}&space;-&space;Q_{g}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;S&space;=&space;P&space;-&space;ET&space;-&space;Q_{s}&space;-&space;Q_{g}" title="\Delta S = P - ET - Q_{s} - Q_{g}" /></a>
 
-[![asf](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)
+[![](https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png)](#)
+
+<a href="#"><img src="https://ca.water.usgs.gov/projects/central-valley/images/ca3449_cover1.png" /></a>
 
 # Satellite Data
 
