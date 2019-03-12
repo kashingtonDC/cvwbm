@@ -6,3 +6,7 @@
 .ipynb_checkpoints/
 .DS_Store
 /code/old/
+
+# Probably want to uncomment these at some point
+/data
+/figs
