@@ -113,9 +113,14 @@ curl -o 1804.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD
 # Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
 
-
 # GW Basins 
 [basin priority data](https://data.cnra.ca.gov/dataset/sgma-basin-prioritization-2018/resource/7bfe794b-b64e-46ee-9d7f-2ca9593cfee2)
 
 # CA Outflow 
+[dayflow](https://water.ca.gov/Programs/Environmental-Services/Compliance-Monitoring-And-Assessment/Dayflow-Data)
+
+# Well data
+[casgem]https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements
+
+
 
