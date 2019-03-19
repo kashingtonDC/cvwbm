@@ -120,7 +120,7 @@ curl -o 1804.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD
 [dayflow](https://water.ca.gov/Programs/Environmental-Services/Compliance-Monitoring-And-Assessment/Dayflow-Data)
 
 # Well data
-[casgem]https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements
+[casgem](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
 
 
 
