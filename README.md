@@ -122,5 +122,7 @@ curl -o 1804.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD
 # Well data
 [casgem](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
 
+# CVHM Texture model 
+[cvhm texture data](https://ca.water.usgs.gov/projects/central-valley/well-log-texture.xls)
 
-
+[faunt, 2009 model files](https://water.usgs.gov/GIS/dsdl/gwmodels/PP2009-1766/model.zip)
