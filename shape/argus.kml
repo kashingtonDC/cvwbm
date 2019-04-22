@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Basins Bound_Argus_GRACE.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-123.2173378623806,41.96435091789476,0 -122.8618292173916,38.05109614795015,0 -122.1803231003407,38.06866108858944,0 -122.0709587215144,36.96175507541483,0 -121.5706825606277,36.97291494854068,0 -121.5297557684064,36.62044976820683,0 -121.1429276962412,36.6277563298077,0 -121.0596084658489,35.57184969379775,0 -120.7064334450666,35.55527520282511,0 -120.6443535922619,35.18243301928617,0 -120.1588757992483,35.18824477788704,0 -120.09638454253,34.4628277089869,0 -117.9594444421748,34.45964631661437,0 -117.9867993640314,37.76466979228895,0 -118.8541014627513,37.76959593120751,0 -118.8762350968941,38.94862837502522,0 -119.9322344918349,38.94663888785689,0 -120.0419582141184,42.0037277196806,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
