@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Final_planned_flight_lines" id="Final_planned_flight_lines">
+	<SimpleField name="descriptio" type="string"></SimpleField>
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMo" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="float"></SimpleField>
+	<SimpleField name="extrude" type="float"></SimpleField>
+	<SimpleField name="visibility" type="float"></SimpleField>
+	<SimpleField name="drawOrder" type="float"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="snippet" type="string"></SimpleField>
+</Schema>
+<Folder><name>Final_planned_flight_lines</name>
+  <Placemark>
+	<name>NS_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.041365917766,39.606646164443,0 -122.033169582002,39.6271138990009,0 -122.02928797594,39.6309153726934,0 -122.022900556124,39.6379295548014,0 -122.017965839641,39.6453146665119,0 -122.017003444075,39.6482592074447,0 -122.016203169397,39.6514107738585,0 -122.015652553002,39.6529336680009,0 -122.013532026218,39.6584666421295,0 -122.012849832895,39.6616416067143,0 -122.01194255696,39.6690444773139,0 -122.011240874002,39.6817942140008,0 -122.00999405098,39.6923051675284,0 -122.009727450331,39.6944541967067,0 -122.009444558815,39.6969363784856,0 -122.008687081417,39.7033194085374,0 -122.007897244021,39.7101496263571,0 -122.007118430414,39.7137229411442,0 -122.007482096902,39.7231382755255,0 -122.011470453939,39.7275730684092,0 -122.015596225297,39.7292121480305,0 -122.017199569838,39.7317659863721,0 -122.020457655109,39.7366752790986,0 -122.022492980204,39.746995829929,0 -122.02623353266,39.7522141770719,0 -122.029245236258,39.7558496895216,0 -122.031795869501,39.7596413632857,0 -122.035195880421,39.7647246106686,0 -122.036921666513,39.7682841593033,0 -122.038473295178,39.7708470901804,0 -122.04004378238,39.773793027566,0 -122.040758374666,39.7824756197618,0 -122.051808562594,39.7956398502183,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NS_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.872904141704,39.6227356454032,0 -121.898121425984,39.6336686763816,0 -121.908321023003,39.641705071879,0 -121.923792448208,39.6655837978224,0 -121.924424610278,39.6670782601191,0 -121.925310025585,39.6767844256991,0 -121.939934744695,39.694351655357,0 -121.943338461877,39.6983596343625,0 -121.952365844002,39.7086389660009,0 -121.977312596002,39.7423008790008,0 -121.984681883002,39.7691751170008,0 -121.985974379166,39.8020723084872,0 -121.986222206002,39.8083774740009,0 -121.998215578362,39.8333785295066,0 -121.99843329812,39.8823965485441,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.137553259722,39.7712579656892,0 -122.132139977458,39.7708365130396,0 -122.106589893802,39.772414500746,0 -122.095853779002,39.7696003820009,0 -122.088363010649,39.7685369835838,0 -122.075382000418,39.7713906238284,0 -122.067672103151,39.7748552953707,0 -122.063558175383,39.7763312183702,0 -122.059507710723,39.7778605052301,0 -122.054564937527,39.7808915186278,0 -122.052612296476,39.7829607773821,0 -122.049470270705,39.7845976108218,0 -122.045619145991,39.7865261248906,0 -122.007418178438,39.7899228507463,0 -121.989560716506,39.8197935241038,0 -121.989714666991,39.8223455332169,0 -121.987372938996,39.8264614401405,0 -121.963628037496,39.8700812452589,0 -121.955162067351,39.8898804193828,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.12889147186,39.7239536284966,0 -122.119844359729,39.7352543293583,0 -122.096641367982,39.7313400634013,0 -122.090200294744,39.7301252113197,0 -122.087132164002,39.7302318550009,0 -122.077122106002,39.7374077020009,0 -122.050559442002,39.7436000790008,0 -122.040782922433,39.7453914954449,0 -122.029030289918,39.7475209020274,0 -122.019786880752,39.7484119100733,0 -122.000425660546,39.7505781365583,0 -121.994471274109,39.747957780634,0 -121.975095045909,39.7416536576766,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_3a</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.104037627206,39.6875250190544,0 -122.071994464673,39.6874439428033,0 -122.066298067191,39.6845880072792,0 -122.054324604002,39.6820987730009,0 -122.028755575002,39.6792740720008,0 -122.01168,39.682255,0 -121.934705612386,39.6754502734107,0 -121.923180862931,39.6718256732593,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_3b</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.926858086826,39.6721535415956,0 -121.915459542204,39.6715938297532,0 -121.885733396317,39.6692456013947,0 -121.874448063165,39.6727220314028,0 -121.837340241638,39.6733897258068,0 -121.831706551177,39.6734023215378,0 -121.821683117094,39.6734480037493,0 -121.805736693474,39.6797117821265,0 -121.79616709998,39.6805705784668,0 -121.778117230762,39.6725363131679,0 -121.773889050464,39.6724456845312,0 -121.770805189513,39.6720385974003,0 -121.761839330556,39.6717375983443,0 -121.745190495178,39.6600204862088,0 -121.742814959773,39.6598085644646,0 -121.735879591914,39.6558761660213,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_3c</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.736019498081,39.6559419956836,0 -121.717027512685,39.6490426144144,0 -121.71067523431,39.6450147840298,0 -121.682641910637,39.6426204691103,0 -121.665453483683,39.6365435709706,0 -121.635549187526,39.6387839549436,0 -121.629284085649,39.6427815159202,0 -121.610464504619,39.6452066173723,0 -121.60383375066,39.6482695988082,0 -121.592551383176,39.6461954999095,0 -121.568272694002,39.6484454110009,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_4b</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.70045595871,39.5808056895433,0 -121.709414656584,39.5851098904764,0 -121.780002007149,39.6168539150303,0 -121.811340117381,39.6158525918467,0 -121.873862219261,39.6230524096768,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NS_5a</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.701539646389,39.580486778664,0 -121.701273229393,39.583178490544,0 -121.69187243636,39.5971932653317,0 -121.689199412209,39.6011360708488,0 -121.684906784042,39.6065149804407,0 -121.674529546941,39.6221801423936,0 -121.673079062602,39.6251908206897,0 -121.664630321946,39.6369282798795,0 -121.662039337393,39.6406881811558,0 -121.660352294868,39.6440655802971,0 -121.659097862178,39.6465595776758,0 -121.657518804764,39.6501098716877,0 -121.63815823797,39.6607594391941,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NS_5b</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.701539646389,39.580486778664,0 -121.705037843393,39.5781887844995,0 -121.708045887376,39.5673434483667,0 -121.711636303085,39.5582046799595,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>WE_4c</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.708170349505,39.5775086145952,0 -121.690021506439,39.5769001722473,0 -121.626769252107,39.5536157685937,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NS_3a</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.751967540002,39.6989684250008,0 -121.777240857347,39.6922568885123,0 -121.780350551357,39.6902137562354,0 -121.784741732981,39.6876052189989,0 -121.793606584674,39.6838355704471,0 -121.795870539595,39.6820275608812,0 -121.873417453739,39.6332368553059,0 -121.88143237719,39.6191007177025,0 -121.897731755937,39.6095110844746,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NS_6</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.113379792826,39.8557973696363,0 -122.09284523182,39.8357784501687,0 -122.081737976355,39.8213809134337,0 -122.076341673232,39.8047763335821,0 -122.075859763212,39.7912951947817,0 -122.070870680723,39.7737537166452,0 -122.072298820654,39.7361442455227,0 -122.070364607132,39.6785046187911,0 -122.070142827218,39.6576991124796,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_TIE_5</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.655603657173,39.6459814712,0 -121.659244960764,39.6434421690882,0 -121.666712415447,39.6389189318805,0 -121.670207769029,39.6364342651387,0 -121.753801191251,39.5915801366287,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_TIE_4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.677974617557,39.6542968948403,0 -121.771476302793,39.597527746295,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_TIE_3</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.696881653173,39.6647579156059,0 -121.723187464139,39.6505059640434,0 -121.727619098763,39.6500477355562,0 -121.729977063365,39.6481218110305,0 -121.733903590932,39.6454713805981,0 -121.7703614418,39.6252403648882,0 -121.77633929048,39.6215398516938,0 -121.785479353631,39.6155075517502,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_TIE_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.725628514493,39.6722333376778,0 -121.743372211712,39.6623959531984,0 -121.758635919324,39.6487958099181,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_TIE_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.747264539034,39.6824143704727,0 -121.763308921952,39.6735162025806,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_05</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.765279579661,39.6290919990186,0 -121.718906485709,39.5804523577227,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_06</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.763459123173,39.6348093160386,0 -121.752025659787,39.6225458494131,0 -121.751485085234,39.6209305267392,0 -121.74377842915,39.6120852202919,0 -121.740943521402,39.6104126064847,0 -121.704102009182,39.573518656775,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_07</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.763384243711,39.6410775454312,0 -121.756946012563,39.6342591598792,0 -121.753058962217,39.6329494947762,0 -121.752905759169,39.6312118941652,0 -121.70575237859,39.5803632492082,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_08</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.767334412073,39.6505641223392,0 -121.764184601704,39.6473543387664,0 -121.763243847012,39.6439097774663,0 -121.7614662418,39.6424447091489,0 -121.754460952327,39.6406127270814,0 -121.710238877224,39.592935787406,0 -121.710602713492,39.5898564287906,0 -121.707470715215,39.5859738804693,0 -121.702495753395,39.5825096853254,0 -121.699881474206,39.5795365459192,0 -121.694694087163,39.5761572564494,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_09</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.75796390137,39.6521108179822,0 -121.752739315946,39.6485231686153,0 -121.7523819414,39.6460987050546,0 -121.710396495686,39.6008363316511,0 -121.705404486665,39.5969428108401,0 -121.699893379226,39.5907174554813,0 -121.692267247545,39.5806364837624,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_10</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.753451404476,39.6549761653906,0 -121.749931976348,39.6511854257379,0 -121.746337855398,39.6501825122815,0 -121.744325884654,39.6482784599939,0 -121.743947242838,39.64473814997,0 -121.706513848477,39.6043778811079,0 -121.703690579835,39.6013986860184,0 -121.699158809751,39.5964409162014,0 -121.6923673738,39.5891101494148,0 -121.69023285194,39.5864216580751,0 -121.685513375113,39.5802511179815,0 -121.67699960438,39.5700459673365,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_11</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.748598908382,39.6557037648959,0 -121.741895522531,39.6476325227271,0 -121.738297528954,39.6451101790793,0 -121.730201807494,39.6363567059147,0 -121.727675373572,39.6349296463045,0 -121.69921347234,39.6042317079034,0 -121.698581854957,39.602060121305,0 -121.696465323166,39.6012658750459,0 -121.68990894532,39.59418889196,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_14</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.772631663757,39.69413101849,0 -121.746649562312,39.6708284134414,0 -121.742378160003,39.667342796559,0 -121.736723791059,39.6615595472414,0 -121.735231323382,39.651603037872,0 -121.730333997418,39.6453798178627,0 -121.724174888523,39.6387477784313,0 -121.716428096431,39.6366428943144,0 -121.707665120639,39.6265133693629,0 -121.6988532995,39.616867380303,0 -121.688147519905,39.606304931557,0 -121.684780796575,39.6032445831072,0 -121.682927404051,39.6020270683306,0 -121.681079151915,39.6001229980292,0 -121.679241849267,39.5975491354077,0 -121.676707901384,39.5943885234591,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_15</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.768079993005,39.6962929856693,0 -121.74186155057,39.6733983730745,0 -121.73694575678,39.668103398355,0 -121.736972692022,39.6645226282339,0 -121.7349939724,39.6627355071347,0 -121.731454803979,39.6621877124403,0 -121.722044805689,39.6520469238792,0 -121.712495847684,39.6435262777133,0 -121.702498892363,39.6319783511281,0 -121.702801859534,39.6281719339537,0 -121.694581133,39.618932763994,0 -121.688988919536,39.6163947103108,0 -121.684844265372,39.6119213152094,0 -121.678618235358,39.6025915568809,0 -121.674276600102,39.5980869897835,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_16A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.73186987535,39.6698759687953,0 -121.723502170669,39.6615784256344,0 -121.702374254148,39.6428472448632,0 -121.695650549665,39.6349446759935,0 -121.69016057923,39.6252288613267,0 -121.676531518376,39.6136341977653,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_17</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.72705642541,39.672905469304,0 -121.708351882764,39.6527456278434,0 -121.702720188377,39.6501977698604,0 -121.695795424105,39.642177854125,0 -121.693923752255,39.6371849862604,0 -121.68835708371,39.6311790576997,0 -121.680321427254,39.6221710658916,0 -121.677189806736,39.6191266968483,0 -121.672998981026,39.6148637350461,0 -121.670477025219,39.6118793850135,0 -121.665774647011,39.6068014459695,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_18</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.714319064713,39.6669087964181,0 -121.714530830477,39.6643426421238,0 -121.712743758968,39.6621148321962,0 -121.709567041429,39.6617864583325,0 -121.699890221864,39.6513526428084,0 -121.694710154624,39.6453016412157,0 -121.688864308095,39.6394594506574,0 -121.685453147685,39.6357789505556,0 -121.684947757658,39.6334377560962,0 -121.682356916045,39.6324378265069,0 -121.670310389724,39.6194347021844,0 -121.66481749994,39.6135036258163,0 -121.654312972273,39.6072007837863,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_19</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.701583930652,39.660910755983,0 -121.682519702864,39.6403473420333,0 -121.679910960978,39.6390184247407,0 -121.679361788709,39.6369396342665,0 -121.659282784935,39.6152626601088,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_20</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.689723688759,39.6558526387554,0 -121.656036253848,39.6194931165583,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_21</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.681551606855,39.6547706718613,0 -121.669778142635,39.642066068799,0 -121.666844869188,39.6365951971253,0 -121.663591996966,39.6353883624742,0 -121.652789322581,39.6237234725403,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_16B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.68389336556,39.6154221751796,0 -121.676246128371,39.6077332845009,0 -121.665702051159,39.5982118808826,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>SE_12</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.742320789015,39.6523641536946,0 -121.734795562533,39.6463994111399,0 -121.725945786444,39.637190488529,0 -121.719939071438,39.6343182975764,0 -121.714650760675,39.6286159844958,0 -121.715127496728,39.6259399514944,0 -121.71394721634,39.6245980278955,0 -121.710692207724,39.6243467704486,0 -121.678753573864,39.5898778138653,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_01</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.141408335579,39.7087725000785,0 -122.126570076071,39.7022354404558,0 -122.120334785433,39.7011790045252,0 -122.104050945237,39.6943268807536,0 -122.098355420938,39.687278908462,0 -122.094730950341,39.6792654935394,0 -122.086489818408,39.6731591742003,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_02</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.085591254448,39.6823119993099,0 -122.081394835266,39.6800451675225,0 -122.078563347406,39.6726605411784,0 -122.070466185715,39.6630380223634,0 -122.059991349679,39.6553577883962,0 -122.04640758567,39.6517827993763,0 -122.041993523659,39.6452877431553,0 -122.026532292517,39.6418759734913,0 -122.004938754605,39.6213594221901,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_03</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.129792406959,39.7269263248089,0 -122.125741705538,39.7213696985151,0 -122.113275038078,39.7124724794524,0 -122.107629266028,39.7041600479626,0 -122.095900480428,39.6957274404762,0 -122.082145963597,39.6838917121803,0 -122.077991445485,39.6826376478437,0 -122.076781170206,39.6799533600581,0 -122.074031743283,39.6752219621889,0 -122.072095772537,39.6716825791939,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_04</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.098179934329,39.7087004387062,0 -122.073193145219,39.6820136883484,0 -122.067768840754,39.6782561610397,0 -122.067049622385,39.6754482527308,0 -122.063353657686,39.6714977141469,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_06</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.091596302588,39.7170429220713,0 -122.088885284994,39.715198073213,0 -122.088203025548,39.7134201633999,0 -122.047930216978,39.6703875202359,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_07</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.092176561339,39.7253480845476,0 -122.089726605003,39.7200237985637,0 -122.086377761798,39.7191576471474,0 -122.081884188901,39.7143596351425,0 -122.078923229456,39.7122587728061,0 -122.075557364322,39.7091281694184,0 -122.07571540043,39.7077715560024,0 -122.040218697131,39.6698316572121,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_08</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.097819444539,39.7427080649703,0 -122.087188719137,39.730094352481,0 -122.07178206536,39.711258141396,0 -122.069453883968,39.7095374447678,0 -122.068340036798,39.7075813189581,0 -122.068140991399,39.7056503521665,0 -122.065327532724,39.7028099533645,0 -122.061997538585,39.7008048951547,0 -122.034837521586,39.6717679441013,0 -122.034632211821,39.6690916308645,0 -122.031138956464,39.6632970032533,0 -122.023741437928,39.6544701617573,0 -122.016112165197,39.6477961867955,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_09</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.089905092777,39.7382953399699,0 -122.064714931513,39.7113973194772,0 -122.065620116561,39.7077512954821,0 -122.065016337067,39.7063847451081,0 -122.058490873176,39.7047472466276,0 -122.05445225666,39.7032210861481,0 -122.053399413658,39.7011299225553,0 -122.052995763003,39.6988746876983,0 -122.024796059405,39.668718399185,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_10</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.087915803678,39.7438583579601,0 -122.083951231071,39.739626863428,0 -122.082316219338,39.7387812314165,0 -122.081380352137,39.7368940649033,0 -122.067483489997,39.7220655982885,0 -122.065358129382,39.7206310078032,0 -122.0638096341,39.7181682865241,0 -122.057438456833,39.711312408092,0 -122.055316807865,39.7095997036377,0 -122.053644102965,39.7072578365492,0 -122.01996703299,39.6712451518949,0 -122.01482480301,39.6688493304079,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_11</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.108755517723,39.7731717187624,0 -122.103485496662,39.7625564226958,0 -122.099927234591,39.7589325481428,0 -122.085604888082,39.7490193941227,0 -122.082525270114,39.7453626715503,0 -122.071752515282,39.7342908958351,0 -122.068938325281,39.7329977683209,0 -122.059882671535,39.7225688289911,0 -122.059376555595,39.7210727455394,0 -122.015276945587,39.6739207551186,0 -122.012490530546,39.6727132340688,0 -122.010139361576,39.6699679413886,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_12</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.09749389238,39.7714675156979,0 -122.09319597573,39.7635989644082,0 -122.091152651028,39.7606420647345,0 -122.08308409452,39.7532134741382,0 -122.078298474028,39.7500511490482,0 -122.075223399032,39.7471887046669,0 -122.073570948609,39.7457343353245,0 -122.071024350083,39.742938925063,0 -122.070032487251,39.7401425184608,0 -122.05236496496,39.721271584337,0 -122.051921389779,39.7186822411442,0 -122.048265540862,39.7168910899414,0 -122.041412857059,39.709567014708,0 -122.035196684971,39.7045145820545,0 -122.033178403046,39.7007635548918,0 -122.010391467207,39.6763874398281,0 -122.007452076597,39.6751221737318,0 -122.005086312176,39.6728845925423,0 -122.004624427774,39.67021480343,0 -122.001663110608,39.6670446826696,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_13</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.081945968367,39.7605471536694,0 -122.075411610242,39.7535731835331,0 -122.074905901275,39.7515902773537,0 -122.072177689206,39.7483213988326,0 -122.069236579232,39.7469853785908,0 -122.060720394378,39.7378871555079,0 -122.059824364973,39.736016568078,0 -122.05751490212,39.7344634207964,0 -122.040657084169,39.7164508789189,0 -122.039339612954,39.7140611811253,0 -122.037057825056,39.7126035591552,0 -122.02071958701,39.6951325686901,0 -122.019666159364,39.6921089994219,0 -122.017288817439,39.6897077942001,0 -122.014148465481,39.6881027551934,0 -122.008838547575,39.6824208803511,0 -122.007068834902,39.6770894855119,0 -122.004335913502,39.6738870970937,0 -121.999070439318,39.6719654806085,0 -121.993952397185,39.6664857560977,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_14</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.087753312162,39.7808301751807,0 -122.088082462841,39.7734374186113,0 -122.083705204387,39.7695978519406,0 -122.079621484298,39.7638734513817,0 -122.074607061428,39.7578675246787,0 -122.068611419361,39.7526534731451,0 -122.061069352638,39.7457741453653,0 -122.053084505107,39.7394508970302,0 -122.050593198796,39.7353323713017,0 -122.048341956424,39.7323544622892,0 -122.042527833927,39.7261418851199,0 -122.041655241914,39.7224022170842,0 -122.037273436396,39.7205261920069,0 -122.015991239626,39.6977689626867,0 -122.016739985234,39.6938222909941,0 -122.015345107052,39.6923445270845,0 -122.010543368155,39.691940502684,0 -122.00627985854,39.6873782893051,0 -122.00229199755,39.6835566994894,0 -121.982723022491,39.6654608667492,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_15</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.082600451126,39.7809871339978,0 -122.079473921335,39.767246681438,0 -122.075826886914,39.7635270695039,0 -122.072212498265,39.7614504628453,0 -122.066057674063,39.7589644839682,0 -122.052269376397,39.7442406586684,0 -122.04846046531,39.7430091291691,0 -122.0457803516,39.7398546906662,0 -122.045710280595,39.7372337785854,0 -122.031621742903,39.7221774246463,0 -122.030814194849,39.7207335137494,0 -122.028980245101,39.719353556308,0 -121.978531375751,39.6653663715439,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_16</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.096283657177,39.798523913663,0 -122.092644584443,39.793209477942,0 -122.088669936561,39.7913192800562,0 -122.083151030011,39.7859533940694,0 -122.078745855997,39.780206639253,0 -122.072727546039,39.7665524093182,0 -122.068306039713,39.7650771564925,0 -122.059791848076,39.7579751740687,0 -122.054506540711,39.7548129417192,0 -122.048509383192,39.7512323098963,0 -122.045225855649,39.7473821641799,0 -122.032046563205,39.7303243190466,0 -122.031923652032,39.7290484039475,0 -122.030229325402,39.7272835276165,0 -122.028675586024,39.7267210079772,0 -122.023312686061,39.7209875203227,0 -122.023681302539,39.71768541736,0 -122.022058303162,39.7161498745733,0 -122.017166997684,39.7144156918327,0 -122.014914233032,39.7135023774827,0 -122.014483831756,39.7115256027511,0 -122.002482481755,39.7011718954909,0 -122.001958275338,39.6981456959817,0 -121.990895151252,39.6862353154605,0 -121.987007787931,39.684794360357,0 -121.982101873295,39.6799866917982,0 -121.954099704493,39.6435452739443,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_17B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.010962090434,39.7154741873382,0 -122.008800190104,39.713161708106,0 -122.009920319653,39.7097611367688,0 -122.007976456427,39.7082846657628,0 -122.00130604444,39.7051440920623,0 -121.984614320966,39.6872781044901,0 -121.98335603668,39.6855984944948,0 -121.981017536315,39.6834267784272,0 -121.948096624263,39.6472135014233,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_18B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.007545697539,39.7230662498508,0 -122.004525076857,39.7162842484898,0 -121.99902862614,39.7128609626324,0 -121.994851987323,39.7059344692089,0 -121.942301770903,39.6498341095689,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_19</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.062264976676,39.7856723086458,0 -122.056762338996,39.7797989613922,0 -122.054365679294,39.777223696069,0 -122.051469679895,39.7731752874354,0 -122.047423435457,39.7674647817338,0 -122.04279843641,39.7641475078951,0 -122.03881958135,39.7606387285267,0 -122.036703980632,39.7582906066427,0 -122.034321681682,39.7558335481445,0 -122.019582091732,39.7394575335926,0 -122.017634418143,39.7354880805846,0 -122.007718941838,39.7323890691649,0 -122.007817812924,39.7275020639056,0 -121.985529390174,39.703654249429,0 -121.981015797203,39.7004493827294,0 -121.978281645156,39.6958949994978,0 -121.937570743439,39.6523801452068,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_20B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.0042083065,39.7360113434489,0 -121.993287091455,39.7215937781807,0 -121.993119106409,39.7194746114656,0 -121.931420420298,39.6541966711395,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_21A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.0510923711,39.7845607789182,0 -122.047147018145,39.7834825076707,0 -122.043515922596,39.7780756227646,0 -122.041020412394,39.7763030466644,0 -122.036566475813,39.7710561601716,0 -122.035171624124,39.7674778060946,0 -122.030021741912,39.7620661918995,0 -122.024921910275,39.7611761973288,0 -122.018003137983,39.7558913459133,0 -122.014514177895,39.7516226428975,0 -122.012378279573,39.7487765564784,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_22</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.052768838731,39.798606842789,0 -122.042522314499,39.7876685754217,0 -122.040278195175,39.786441687545,0 -122.03939532258,39.7843296168839,0 -122.033715856821,39.7782641296032,0 -122.031161390614,39.7773806237373,0 -122.029646690842,39.7759433628526,0 -122.029568293479,39.7738338234214,0 -122.006915594944,39.7496243344809,0 -122.004347339941,39.7474871167153,0 -122.002581683199,39.7449901621014,0 -121.999480825776,39.741673995864,0 -121.999098192216,39.7395709649679,0 -121.99601861626,39.73797091754,0 -121.922629846723,39.6593985138351,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_23</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.047492603546,39.8013506180331,0 -122.019508629926,39.7708416007437,0 -122.018587047738,39.7684353093571,0 -122.015441916389,39.7664420785656,0 -122.005722853748,39.7548018115989,0 -121.995719359416,39.7454109493778,0 -121.914591900348,39.6621050742592,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_24</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.042219598509,39.8027286575375,0 -122.015950188069,39.7746717818615,0 -122.013567213159,39.7735183247633,0 -122.012867535927,39.771287925786,0 -122.008566403232,39.766648840547,0 -122.008496401447,39.7652089956622,0 -122.006296096844,39.7643186780493,0 -122.001524363466,39.7592522467872,0 -122.000212036527,39.7582597347699,0 -121.999258005595,39.7568289912697,0 -121.997315474868,39.7547518121976,0 -121.995379811307,39.7535939270154,0 -121.992694186514,39.7524129320565,0 -121.989253443147,39.7489237687984,0 -121.97409028556,39.7297465752825,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_8</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.908956399338,39.7074321924653,0 -121.933196826329,39.696344972436,0 -121.9434849214,39.6934154603159,0 -121.995278812037,39.6665819409982,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_7</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.921057149609,39.7193765867521,0 -121.980063102834,39.6993789360872,0 -121.999121179847,39.6830570466171,0 -122.017566834774,39.676371115933,0 -122.023708457297,39.673774955805,0 -122.035105336921,39.6692122675932,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_6</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.938676942086,39.7423624978704,0 -121.989441313946,39.7142803587551,0 -121.99278400027,39.7134530191226,0 -121.994729735339,39.7113325943087,0 -121.994809401265,39.7072915050061,0 -121.995629285393,39.7052389096835,0 -122.000717608648,39.7045144554741,0 -122.006286788468,39.7048889641105,0 -122.065793873074,39.6716731724665,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_5</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.95635319026,39.7516879697001,0 -121.96626776737,39.7472672489818,0 -121.970120916732,39.7458181333961,0 -122.010031243835,39.7256934206015,0 -122.017135639206,39.7208040411491,0 -122.018909789576,39.7196900335957,0 -122.024520144962,39.7169456350834,0 -122.053984806962,39.6989264788862,0 -122.079791784623,39.6829226464213,0 -122.086051130263,39.6801272163734,0 -122.096498644874,39.6785482658504,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.967605416591,39.7781828267024,0 -122.008771157362,39.756046875482,0 -122.022450941401,39.7472156753214,0 -122.050424131925,39.7249587823999,0 -122.065297674327,39.7150142776339,0 -122.069095009486,39.7143002168918,0 -122.080427182588,39.7116864380771,0 -122.086664800865,39.7058928067058,0 -122.093601671098,39.6999122706335,0 -122.096577412683,39.6969786183543,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_3</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.975820576998,39.7862846297325,0 -122.061118815321,39.7462142159871,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-121.9924146428,39.8026400550167,0 -122.037715371261,39.7773472491485,0 -122.040997384756,39.7757043382202,0 -122.048066126023,39.7749844380075,0 -122.050471648686,39.7722500155148,0 -122.051802852561,39.7677985388536,0 -122.073277418937,39.7554495359015,0 -122.077485877486,39.7532000401593,0 -122.086001742614,39.7488908823364,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_TIE_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.004972421165,39.8142541433945,0 -122.047540454459,39.793026031757,0 -122.058299074286,39.787109440037,0 -122.067356431341,39.7812383916355,0 -122.072104382215,39.7803279774155,0 -122.078386774543,39.7798572545146,0 -122.089321578073,39.7795970774598,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_20A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.04847424001,39.7786410323453,0 -122.045130507118,39.7750706689424,0 -122.040988223928,39.7733017318935,0 -122.039513766214,39.7717604089215,0 -122.039699912556,39.766542451018,0 -122.035669307234,39.7649657099333,0 -122.032424643059,39.7614994211929,0 -122.029272413463,39.7605548872995,0 -122.02640545603,39.7546864277629,0 -122.020849397315,39.7491299944353,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_21B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.002529766,39.7372383863888,0 -121.977254024247,39.7101930433514,0 -121.978660662086,39.7081215485977,0 -121.976484379764,39.7060604521075,0 -121.973321382872,39.7059826971224,0 -121.926530600159,39.6564993578182,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_18A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.06450024696,39.7764332425538,0 -122.061063223477,39.7702677674759,0 -122.054432066414,39.7640528162286,0 -122.033776681638,39.7473881824135,0 -122.028916357596,39.745177407367,0 -122.028000064407,39.7411966855014,0 -122.020574517989,39.7334479172707,0 -122.020260866347,39.7311335201663,0 -122.015794594104,39.7265205698415,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_17A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="descriptio">&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;mar</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.07030550005,39.789075411024,0 -122.068832209121,39.7800964850282,0 -122.070171699024,39.7767770978011,0 -122.066918943477,39.7719439870974,0 -122.064322733529,39.7689795338027,0 -122.064465835985,39.7668953286095,0 -122.058923144237,39.7622507483172,0 -122.054043180409,39.7615156875005,0 -122.041506845335,39.748125794891,0 -122.034216691322,39.7434034185747,0 -122.032772814392,39.7387932585467,0 -122.025189091684,39.730687301693,0 -122.025651421478,39.7283989566413,0 -122.021985731532,39.7245805954843,0 -122.018234361404,39.7232515639081,0 -122.016223169547,39.7211009004204,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_25</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.029099546485,39.8086786972744,0 -121.899279496914,39.667237971296,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_26</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.021857889192,39.8112297762128,0 -121.888438107463,39.667921642547,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>NW_27</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Final_planned_flight_lines">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-122.015522450529,39.8149422675057,0 -121.876386011253,39.6716158340548,0</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>
