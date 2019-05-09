@@ -131,10 +131,13 @@ rm -rf Shapefiles Shapefiles.zip
 # Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
 
-# GW Basins 
+# Aqueducts - DWR 
+[https://data.ca.gov/dataset/canals-and-aqueducts-local](https://data.ca.gov/dataset/canals-and-aqueducts-local)
+
+# SGMA GW Basins 
 [basin priority data](https://data.cnra.ca.gov/dataset/sgma-basin-prioritization-2018/resource/7bfe794b-b64e-46ee-9d7f-2ca9593cfee2)
 
-# CA Outflow 
+# SF Bay Outflow - DWR
 [dayflow](https://water.ca.gov/Programs/Environmental-Services/Compliance-Monitoring-And-Assessment/Dayflow-Data)
 
 # Well data
