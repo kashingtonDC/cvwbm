@@ -110,6 +110,24 @@ curl -o 1804.zip https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD
 
 ```
 
+# C2VSIM gw flow model data
+
+click link to download:
+
+[https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/richpauloo/pred_gws/tree/master/data/C2VSimFG-BETA_GIS/Shapefiles](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/richpauloo/pred_gws/tree/master/data/C2VSimFG-BETA_GIS/Shapefiles)
+
+```
+mkdir c2vsim
+cd c2vsim
+
+mv ~/Downloads/Shapefiles.zip
+tar -xvf Shapfiles.zip
+cd Shapefiles
+mv * ..
+rm -rf Shapefiles Shapefiles.zip
+
+```
+
 # Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
 
