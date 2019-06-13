@@ -120,13 +120,16 @@ click link to download:
 mkdir c2vsim
 cd c2vsim
 
-mv ~/Downloads/Shapefiles.zip
+mv ~/Downloads/Shapefiles.zip .
 tar -xvf Shapfiles.zip
 cd Shapefiles
 mv * ..
 rm -rf Shapefiles Shapefiles.zip
 
 ```
+
+# Crop Coefficients - USGS
+[https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip](https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip)
 
 # Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
@@ -140,10 +143,16 @@ rm -rf Shapefiles Shapefiles.zip
 # SF Bay Outflow - DWR
 [dayflow](https://water.ca.gov/Programs/Environmental-Services/Compliance-Monitoring-And-Assessment/Dayflow-Data)
 
-# Well data
+# Well data - DWR Casgem 
 [casgem](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
 
-# CVHM Texture model 
+# CVHM Texture model - USGS
 [cvhm texture data](https://ca.water.usgs.gov/projects/central-valley/well-log-texture.xls)
 
 [faunt, 2009 model files](https://water.usgs.gov/GIS/dsdl/gwmodels/PP2009-1766/model.zip)
+
+# Major Rivers - CNRA
+[major rivers](https://data.cnra.ca.gov/dataset/national-hydrography-dataset-nhd/resource/510abd22-f63b-4981-a17e-3c76cec5fa18)
+
+# Canals / Aqueducts - DWR
+[canals and aqueducts](http://atlas-dwr.opendata.arcgis.com/datasets/b788fb2628844f54b92e46dac5bb7229_0)
