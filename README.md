@@ -128,31 +128,36 @@ rm -rf Shapefiles Shapefiles.zip
 
 ```
 
-# Crop Coefficients - USGS
+# DATA
+
+## Crop Coefficients - USGS
 [https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip](https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip)
 
-# Reservoirs Data - California Data Exchange Center
+## Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
 
-# Aqueducts - DWR 
+## Aqueducts - DWR 
 [https://data.ca.gov/dataset/canals-and-aqueducts-local](https://data.ca.gov/dataset/canals-and-aqueducts-local)
 
-# SGMA GW Basins 
+## SGMA GW Basins 
 [basin priority data](https://data.cnra.ca.gov/dataset/sgma-basin-prioritization-2018/resource/7bfe794b-b64e-46ee-9d7f-2ca9593cfee2)
 
-# SF Bay Outflow - DWR
+## SF Bay Outflow - DWR
 [dayflow](https://water.ca.gov/Programs/Environmental-Services/Compliance-Monitoring-And-Assessment/Dayflow-Data)
 
-# Well data - DWR Casgem 
+## Well data - DWR Casgem 
 [casgem](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
 
-# CVHM Texture model - USGS
+## CVHM Texture model - USGS
 [cvhm texture data](https://ca.water.usgs.gov/projects/central-valley/well-log-texture.xls)
 
 [faunt, 2009 model files](https://water.usgs.gov/GIS/dsdl/gwmodels/PP2009-1766/model.zip)
 
-# Major Rivers - CNRA
+## Major Rivers - CNRA
 [major rivers](https://data.cnra.ca.gov/dataset/national-hydrography-dataset-nhd/resource/510abd22-f63b-4981-a17e-3c76cec5fa18)
 
-# Canals / Aqueducts - DWR
+## Canals / Aqueducts - DWR
 [canals and aqueducts](http://atlas-dwr.opendata.arcgis.com/datasets/b788fb2628844f54b92e46dac5bb7229_0)
+
+## SW deliveries - USBR
+[sw deliveries](https://www.usbr.gov/mp/cvo/deliv.html)
