@@ -71,6 +71,17 @@ def get_data(dataset, year, month, area):
 	
 	return result
 
+def col_to_dt(df):
+    '''
+    converts the first col of a dataframe read from CSV to datetime
+    '''
+    t = df.copy()
+    t['dt'] = pd.to_datetime(df[df.columns[0]])
+    t = t.set_index(pd.to_datetime(t[t.columns[0]]))
+    t.drop([t.columns[0], "dt"],axis = 1, inplace = True)
+    
+    return t
+
 def monthly_sum(dataset, years, months, area):
 	
 	'''
@@ -175,7 +186,8 @@ def calc_monthly_sum(dataset, years, months, area):
 		sumdict  = ic.reduceRegion(
 			reducer = ee.Reducer.sum(),
 			geometry = area,
-			scale = scale)
+			scale = scale,
+            bestEffort = True)
 		total = sumdict.getInfo()[var]
 		print(total)
 		sums.append(total)
@@ -312,6 +324,8 @@ def load_data():
 	##### SM data #######
 	#####################
 	data['tc_sm'] = [ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE'), "soil", 0.1]
+    
+    data['gldas_sm'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "RootMoist_inst", 1 / 240]
 
 	data['sm1'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi00_10cm_tavg", 1 ]
 	data['sm2'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi10_40cm_tavg", 1 ]
