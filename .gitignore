@@ -7,7 +7,7 @@
 .DS_Store
 /code/old/
 
-/data/measurements.csv
+/data/well_measurements.csv
 
 # Probably want to uncomment these at some point
 # /data
