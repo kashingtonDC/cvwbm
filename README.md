@@ -162,5 +162,8 @@ rm -rf Shapefiles Shapefiles.zip
 ## Canals / Aqueducts - DWR
 [canals and aqueducts](http://atlas-dwr.opendata.arcgis.com/datasets/b788fb2628844f54b92e46dac5bb7229_0)
 
+## State Water Project - USGS NHD
+[SWP]https://hub.arcgis.com/datasets/94f725f8866642b792bcfdb5b5a5a313
+
 ## SW deliveries - USBR
 [sw deliveries](https://www.usbr.gov/mp/cvo/deliv.html)
