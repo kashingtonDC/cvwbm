@@ -13,6 +13,28 @@ from shapely.ops import unary_union
 from pandas.tseries.offsets import MonthEnd
 
 
+'''
+Helpers
+'''
+
+
+def col_to_dt(df):
+	'''
+	converts the first col of a dataframe read from CSV to datetime
+	'''
+	t = df.copy()
+	t['dt'] = pd.to_datetime(df[df.columns[0]])
+	t = t.set_index(pd.to_datetime(t[t.columns[0]]))
+	t.drop([t.columns[0], "dt"],axis = 1, inplace = True)
+	
+	return t
+
+
+'''
+Vector functions for geographic areas
+'''
+
+
 def gdf_to_ee_poly(gdf):
 
 	t = gdf.geometry.simplify(0.01)
@@ -47,11 +69,14 @@ def get_area(gdf, fast = True):
 		
 	return area
 
+'''
+Functions to handle Remote Sensing data, mostly in earth engine 
 
+'''
 
 def get_data(dataset, year, month, area):
 	'''
-	calculates the monthly sum a dataset in units of mm/time 
+	calculates the monthly sum for earth engine datasets
 	'''
 
 	col = dataset[0]
@@ -60,10 +85,10 @@ def get_data(dataset, year, month, area):
 
 	t = col.filter(ee.Filter.calendarRange(year, year, 'year')).filter(ee.Filter.calendarRange(month, month, 'month')).select(var).filterBounds(area).sum()
 	t2 = t.multiply(1e-3).multiply(ee.Image.pixelArea()).multiply(scaling_factor).multiply(1e-9)
-	# convert mm to m, multiply by pixel area (m^2), multiply by scaling factor, m^3 to km^3
+	# convert mm to m, multiply by pixel area (m^2), multiply by scaling factor (given opr calculated from earth engine), convert m^3 to km^3
 	scale = t2.projection().nominalScale()
 	sumdict  = t2.reduceRegion(
-		reducer = ee.Reducer.sum(),
+		reducer = ee.Reducer.sum(), 
 		geometry = area,
 		scale = scale)
 	
@@ -71,16 +96,6 @@ def get_data(dataset, year, month, area):
 	
 	return result
 
-def col_to_dt(df):
-	'''
-	converts the first col of a dataframe read from CSV to datetime
-	'''
-	t = df.copy()
-	t['dt'] = pd.to_datetime(df[df.columns[0]])
-	t = t.set_index(pd.to_datetime(t[t.columns[0]]))
-	t.drop([t.columns[0], "dt"],axis = 1, inplace = True)
-	
-	return t
 
 def monthly_sum(dataset, years, months, area):
 	
@@ -94,70 +109,11 @@ def monthly_sum(dataset, years, months, area):
 		for month in months:
 			r = get_data(dataset, year, month, area)
 			monthly.append(r)
-			time.sleep(5)
+			time.sleep(5) # so ee doens't freak out 
 	
 	print("wrapper complete")
 	return monthly
 
-def gen_polys(geometry, dx=0.5, dy=0.5):
-	
-	'''
-	Return ee.ImaceCollection of polygons used to submit full res queries
-	'''
-	
-	bounds = ee.Geometry(geometry).bounds()
-	coords = ee.List(bounds.coordinates().get(0))
-	ll = ee.List(coords.get(0))
-	ur = ee.List(coords.get(2))
-	xmin = ll.get(0)
-	xmax = ur.get(0)
-	ymin = ll.get(1)
-	ymax = ur.get(1)
-
-	latlist = ee.List.sequence(ymin, ymax, dx)
-	lonlist = ee.List.sequence(xmin, xmax, dy)
-	
-	polys = []
-	
-	for lon in lonlist.getInfo():
-		for lat in latlist.getInfo():
-		
-			def make_rect(lat, lon):
-				lattemp = ee.Number(lat)
-				lontemp = ee.Number(lon)
-				uplattemp = lattemp.add(dy)
-				lowlontemp = lontemp.add(dx)
-
-				return ee.Feature(ee.Geometry.Polygon([[lontemp, lattemp],[lowlontemp, lattemp],[lowlontemp, uplattemp],[lontemp, uplattemp]]))
-			
-			poly = make_rect(lat,lon)
-			polys.append(poly)
-	
-	return ee.FeatureCollection(ee.List(polys))
-
-def chunk(dataset,area):
-	'''
-	This doesnt work yet as expected. This sums the variable in each chunk to give a pseudospatial respresentation 
-	'''
-	polys = gen_polys(area)
-	d = polys.getInfo()
-	results = []
-	for i in d['features']:
-		aoi = ee.Geometry.Polygon(i['geometry']['coordinates']).intersection(area)
-		t = col.filter(ee.Filter.calendarRange(year, year, 'year')).filter(ee.Filter.calendarRange(month, month, 'month')).select(var).filterBounds(aoi).sum()
-		t2 = t.multiply(1e-3).multiply(ee.Image.pixelArea()).multiply(scaling_factor).multiply(1e-9)
-
-		scale = t2.projection().nominalScale()
-		sumdict  = t2.reduceRegion(
-			reducer = ee.Reducer.sum(),
-			geometry = aoi,
-			scale = scale)
-
-		result = sumdict.getInfo()[var]
-		results.append(result)
-		print('poly complete')
-		
-	return results
 
 def calc_monthly_sum(dataset, years, months, area):
 	
@@ -194,7 +150,112 @@ def calc_monthly_sum(dataset, years, months, area):
 
 	return sums
 
-def img_to_arr(eeImage, var_name):
+def get_grace(dataset, year, month):
+
+    col = dataset[0]
+    var = dataset[1]
+    scaling_factor = dataset[2]
+
+    t = col.filter(ee.Filter.calendarRange(year, year, 'year')).filter(ee.Filter.calendarRange(month, month, 'month')).select(var).filterBounds(area).sum()
+    t2 = t.multiply(ee.Image.pixelArea()).multiply(scaling_factor).multiply(1e-6) # Multiply by pixel area in km^2
+    
+    scale = t2.projection().nominalScale()
+    sumdict  = t2.reduceRegion(
+            reducer = ee.Reducer.sum(),
+            geometry = area,
+            scale = scale)
+    
+    result = sumdict.getInfo()[var] * 1e-5 # cm to km
+
+    return result
+
+def grace_wrapper(dataset):
+    monthly = []
+
+    for year in years:
+        print(year)
+        for month in months:
+            try:
+                r = get_grace(dataset, year, month)
+                monthly.append(r)
+            except:
+                monthly.append(np.nan)
+    
+    print("wrapper complete")
+    return monthly
+
+def get_ims(dataset, years, months, area):
+	
+	'''
+	Calculates monthly sum for hourly data. works for GLDAS / NLDAS 
+	'''
+	ImageCollection = dataset[0]
+	var = dataset[1]
+	scaling_factor = dataset[2]
+	native_res = dataset[3]
+			
+	period_start = datetime.datetime(years[0], 1, 1)
+	start_date = period_start.strftime("%Y-%m-%d")
+	period_end = datetime.datetime(years[-1]+1, 1, 1)
+	dt_idx = pd.date_range(period_start,period_end, freq='M')
+	
+	ims = []
+	seq = ee.List.sequence(0, len(dt_idx))
+	
+	for i in seq.getInfo():
+		start = ee.Date(start_date).advance(i, 'month')
+		end = start.advance(1, 'month');
+		im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).sum().set('system:time_start', start.millis())
+		result = ic.getRegion(area,native_res,"epsg:4326").getInfo()
+		ims.append(result)
+
+	return ims
+
+def df_from_ee_object(imcol):
+    df = pd.DataFrame(imcol, columns = imcol[0])
+    df = df[1:]
+    return(df)
+
+def array_from_df(df, variable):    
+    # get data from df as arrays
+    lons = np.array(df.longitude)
+    lats = np.array(df.latitude)
+    data = np.array(df[variable]) # Set var here 
+                                              
+    # get the unique coordinates
+    uniqueLats = np.unique(lats)
+    uniqueLons = np.unique(lons)
+
+    # get number of columns and rows from coordinates
+    ncols = len(uniqueLons)    
+    nrows = len(uniqueLats)
+
+    # determine pixelsizes
+    ys = uniqueLats[1] - uniqueLats[0] 
+    xs = uniqueLons[1] - uniqueLons[0]
+
+    # create an array with dimensions of image
+    arr = np.zeros([nrows, ncols], np.float32)
+
+    # fill the array with values
+    counter =0
+    for y in range(0,len(arr),1):
+        for x in range(0,len(arr[0]),1):
+            if lats[counter] == uniqueLats[y] and lons[counter] == uniqueLons[x] and counter < len(lats)-1:
+                counter+=1
+                arr[len(uniqueLats)-1-y,x] = data[counter] # we start from lower left corner
+    
+    return arr
+
+
+
+
+
+
+
+# This is the staging area. Haven's used these in a while. 
+
+def img_to_arr(eeImage, var_name, area):
 	temp = eeImage.select(var_name).clip(area)
 	latlon = eeImage.pixelLonLat().addBands(temp)
 	
@@ -250,21 +311,31 @@ def arr_to_img(data,lats,lons):
 				
 	return arr
 
-def freq_hist(eeImage, area, var_name):    
+def freq_hist(eeImage, area, scale, var_name):    
 	freq_dict = ee.Dictionary(
-	  eeImage.reduceRegion(ee.Reducer.frequencyHistogram(), area, 30).get(var_name)
+	  eeImage.reduceRegion(ee.Reducer.frequencyHistogram(), area, scale).get(var_name)
 	);
 	
 	return freq_dict
 
 
-
 def load_data():
+
+	'''
+	This data structure has the following schema:
+
+	data (dict)
+	keys: {product}_{variable}
+	values: 
+
+
+	'''
 	data = {}
 
 	###################
 	##### ET data #####
 	###################
+
 
 	# https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD16A2
 	data['modis_aet'] = [ee.ImageCollection('MODIS/006/MOD16A2'), "ET", 0.1]
@@ -307,7 +378,18 @@ def load_data():
 	####################
 	##### DS data ######
 	####################
-	data['grace'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_jpl", 1]
+	data['jpl'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_jpl",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+
+	data['csr'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_csr",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+
+	data['gfz'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_gfz",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+
+	data['mas'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "lwe_thickness", 1] 
+	data['mas_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "uncertainty", 1] 
+
+	data['cri'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "lwe_thickness", 1] 
+	data['cri_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "uncerrtainty", 1] 
+
 
 	####################
 	##### R data #######
