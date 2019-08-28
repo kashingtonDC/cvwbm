@@ -163,7 +163,11 @@ rm -rf Shapefiles Shapefiles.zip
 [canals and aqueducts](http://atlas-dwr.opendata.arcgis.com/datasets/b788fb2628844f54b92e46dac5bb7229_0)
 
 ## State Water Project - USGS NHD
-[SWP]https://hub.arcgis.com/datasets/94f725f8866642b792bcfdb5b5a5a313
+[SWP](https://services7.arcgis.com/x74yAepfzbQsthyi/arcgis/rest/services/NHD_SWP_Aqueduct/FeatureServer/0?f=pjson)
+'''
+curl -o swp.json https://services7.arcgis.com/x74yAepfzbQsthyi/arcgis/rest/services/NHD_SWP_Aqueduct/FeatureServer/0?f=pjson 
+ogr2ogr -f "ESRI Shapefile" SWP_Canals.shp swp.json
+'''
 
 ## SW deliveries - USBR
 [sw deliveries](https://www.usbr.gov/mp/cvo/deliv.html)
