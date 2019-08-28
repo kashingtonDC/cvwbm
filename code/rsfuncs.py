@@ -184,10 +184,10 @@ def grace_wrapper(dataset):
     print("wrapper complete")
     return monthly
 
-def get_ims(dataset, years, months, area):
+def get_ims(dataset, years, months, area, table = False):
 	
 	'''
-	Calculates monthly sum for hourly data. works for GLDAS / NLDAS 
+	Returns gridded images for EE datasets 
 	'''
 	ImageCollection = dataset[0]
 	var = dataset[1]
@@ -202,14 +202,39 @@ def get_ims(dataset, years, months, area):
 	ims = []
 	seq = ee.List.sequence(0, len(dt_idx))
 	
-	for i in seq.getInfo():
+	# TODO: Make this one loop 
+
+	num_steps = seq.getInfo()
+	print("processing")
+
+	for i in num_steps:
+		if i % 5 == 0:
+			print(str((i / len(num_steps))*100)[:5] + " % ")
+
 		start = ee.Date(start_date).advance(i, 'month')
 		end = start.advance(1, 'month');
-		im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).sum().set('system:time_start', start.millis())
-		result = ic.getRegion(area,native_res,"epsg:4326").getInfo()
+		im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).set('system:time_start', start.millis())
+		result = im.getRegion(area,native_res,"epsg:4326").getInfo()
 		ims.append(result)
 
-	return ims
+	results = []
+
+	print("postprocesing")
+
+	for i in ims:
+		df = df_from_ee_object(i)
+		if table:
+			results.append(df)
+
+		else:
+			images = []
+			for i in df.id.unique():
+				arr = array_from_df(df[df.id==i],var)
+				arr[arr == 0] = np.nan
+				images.append(arr)
+			results.append(images)
+
+	return results
 
 def df_from_ee_object(imcol):
     df = pd.DataFrame(imcol, columns = imcol[0])
@@ -252,8 +277,7 @@ def array_from_df(df, variable):
 
 
 
-
-# This is the staging area. Haven's used these in a while. 
+# This is the staging area. Haven's used these in a while, or not tested altogether. 
 
 def img_to_arr(eeImage, var_name, area):
 	temp = eeImage.select(var_name).clip(area)
@@ -327,6 +351,10 @@ def load_data():
 	data (dict)
 	keys: {product}_{variable}
 	values: 
+	(1) ImageColection
+	(2) variable name
+	(3) scale factor - needed to calculate volumes when computing sums. Depends on units and sampling frequency 
+	(4) native resolution - needed to return gridded images 
 
 
 	'''
@@ -371,8 +399,8 @@ def load_data():
 	###################
 	##### SWE data #####
 	####################
-	data['fldas_swe'] = [ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001'), "SWE_inst", 1 ]
-	data['gldas_swe'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "SWE_inst", 1 / 240 ]
+	data['fldas_swe'] = [ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001'), "SWE_inst", 1 , 12500]
+	data['gldas_swe'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "SWE_inst", 1 / 240 , 25000]
 	data['dmet_swe'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "swe", 1]
 
 	####################
@@ -405,20 +433,23 @@ def load_data():
 	#####################
 	##### SM data #######
 	#####################
-	data['tc_sm'] = [ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE'), "soil", 0.1]
+	data['tc_sm'] = [ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE'), "soil", 0.1, 4000]
 	
-	data['gldas_sm'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "RootMoist_inst", 1 / 240]
+	data['gldas_sm'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "RootMoist_inst", 1 / 240, 25000]
 
-	data['sm1'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi00_10cm_tavg", 1 ]
-	data['sm2'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi10_40cm_tavg", 1 ]
-	data['sm3'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi40_100cm_tavg", 1 ]
-	data['sm4'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi100_200cm_tavg", 1 ]
+	data['sm1'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi00_10cm_tavg", 1 , 12500]
+	data['sm2'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi10_40cm_tavg", 1 , 12500]
+	data['sm3'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi40_100cm_tavg", 1 , 12500]
+	data['sm4'] = [ee.ImageCollection("NASA/FLDAS/NOAH01/C/GL/M/V001"), "SoilMoi100_200cm_tavg", 1 , 12500]
 
-	data['gsm1'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi0_10cm_inst", 1/240 ]
-	data['gsm2'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi10_40cm_inst", 1/240 ]
-	data['gsm3'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi40_100cm_inst", 1/240 ]
-	data['gsm4'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi100_200cm_inst", 1/240 ]
+	data['gsm1'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi0_10cm_inst", 1/240 ,25000]
+	data['gsm2'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi10_40cm_inst", 1/240 ,25000]
+	data['gsm3'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi40_100cm_inst", 1/240 ,25000]
+	data['gsm4'] = [ee.ImageCollection("NASA/GLDAS/V021/NOAH/G025/T3H"), "SoilMoi100_200cm_inst", 1/240 ,25000]
 
+	data['smap_ssm'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "ssm", 1 ,25000]
+	data['smap_susm'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "susm", 1 ,25000]
+	data['smap_smp'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "smp", 1 ,25000]
 	return data
 
 def cdl_2_faunt():
