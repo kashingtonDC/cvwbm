@@ -1,8 +1,15 @@
+'''
+Aakas Ahamed
+Stanford University dept of Geophysics 
+aahamed@stanford.edu 
+
+Codes to process geospatial data in earth engine and python 
+'''
+
 import os
 import ee
 import datetime
 import time
-import sklearn
 
 import geopandas as gp
 import numpy as np
