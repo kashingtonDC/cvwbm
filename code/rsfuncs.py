@@ -159,39 +159,39 @@ def calc_monthly_sum(dataset, years, months, area):
 
 def get_grace(dataset, year, month):
 
-    col = dataset[0]
-    var = dataset[1]
-    scaling_factor = dataset[2]
+	col = dataset[0]
+	var = dataset[1]
+	scaling_factor = dataset[2]
 
-    t = col.filter(ee.Filter.calendarRange(year, year, 'year')).filter(ee.Filter.calendarRange(month, month, 'month')).select(var).filterBounds(area).sum()
-    t2 = t.multiply(ee.Image.pixelArea()).multiply(scaling_factor).multiply(1e-6) # Multiply by pixel area in km^2
-    
-    scale = t2.projection().nominalScale()
-    sumdict  = t2.reduceRegion(
-            reducer = ee.Reducer.sum(),
-            geometry = area,
-            scale = scale)
-    
-    result = sumdict.getInfo()[var] * 1e-5 # cm to km
+	t = col.filter(ee.Filter.calendarRange(year, year, 'year')).filter(ee.Filter.calendarRange(month, month, 'month')).select(var).filterBounds(area).sum()
+	t2 = t.multiply(ee.Image.pixelArea()).multiply(scaling_factor).multiply(1e-6) # Multiply by pixel area in km^2
+	
+	scale = t2.projection().nominalScale()
+	sumdict  = t2.reduceRegion(
+			reducer = ee.Reducer.sum(),
+			geometry = area,
+			scale = scale)
+	
+	result = sumdict.getInfo()[var] * 1e-5 # cm to km
 
-    return result
+	return result
 
 def grace_wrapper(dataset):
-    monthly = []
+	monthly = []
 
-    for year in years:
-        print(year)
-        for month in months:
-            try:
-                r = get_grace(dataset, year, month)
-                monthly.append(r)
-            except:
-                monthly.append(np.nan)
-    
-    print("wrapper complete")
-    return monthly
+	for year in years:
+		print(year)
+		for month in months:
+			try:
+				r = get_grace(dataset, year, month)
+				monthly.append(r)
+			except:
+				monthly.append(np.nan)
+	
+	print("wrapper complete")
+	return monthly
 
-def get_ims(dataset, years, months, area, table = False):
+def get_ims(dataset, years, months, area, return_dates = False, table = False):
 	
 	'''
 	Returns gridded images for EE datasets 
@@ -205,14 +205,16 @@ def get_ims(dataset, years, months, area, table = False):
 	start_date = period_start.strftime("%Y-%m-%d")
 	period_end = datetime.datetime(years[-1]+1, 1, 1)
 	dt_idx = pd.date_range(period_start,period_end, freq='M')
-	
-	ims = []
 	seq = ee.List.sequence(0, len(dt_idx))
+
+	ims = []
 	
-	# TODO: Make this one loop 
+	# TODO: Make this one loop ?
 
 	num_steps = seq.getInfo()
-	print("processing")
+	print("processing:")
+	print("{}".format(ImageCollection))
+	print("progress:")
 
 	for i in num_steps:
 		if i % 5 == 0:
@@ -224,62 +226,84 @@ def get_ims(dataset, years, months, area, table = False):
 		result = im.getRegion(area,native_res,"epsg:4326").getInfo()
 		ims.append(result)
 
+
 	results = []
+	dates = []
 
 	print("postprocesing")
 
 	for i in ims:
 		df = df_from_ee_object(i)
+
 		if table:
 			results.append(df)
 
-		else:
-			images = []
-			for i in df.id.unique():
-				arr = array_from_df(df[df.id==i],var)
-				arr[arr == 0] = np.nan
-				images.append(arr)
-			results.append(images)
+		images = []
 
-	return results
+		for idx,i in enumerate(df.id.unique()):
+
+			t1 = df[df.id==i]
+			arr = array_from_df(t1,var)
+			arr[arr == 0] = np.nan
+			images.append(arr)
+
+			if return_dates:
+				date = df.time.iloc[idx]
+				dates.append(datetime.datetime.fromtimestamp(date/1000.0))
+
+		results.append(images)
+
+	print("====COMPLETE=====")
+
+	# Unpack the list of results 
+	if return_dates:
+		return [ [item for sublist in results for item in sublist], dates]
+	else:   
+		return [item for sublist in results for item in sublist] 
 
 def df_from_ee_object(imcol):
-    df = pd.DataFrame(imcol, columns = imcol[0])
-    df = df[1:]
-    return(df)
+	'''
+	Converts the return of a getRegion ee call to a pandas dataframe 
+	'''
+	df = pd.DataFrame(imcol, columns = imcol[0])
+	df = df[1:]
+	return(df)
 
 def array_from_df(df, variable):    
-    # get data from df as arrays
-    lons = np.array(df.longitude)
-    lats = np.array(df.latitude)
-    data = np.array(df[variable]) # Set var here 
-                                              
-    # get the unique coordinates
-    uniqueLats = np.unique(lats)
-    uniqueLons = np.unique(lons)
 
-    # get number of columns and rows from coordinates
-    ncols = len(uniqueLons)    
-    nrows = len(uniqueLats)
+	'''
+	Convets a pandas df with lat, lon, variable to a numpy array 
+	'''
 
-    # determine pixelsizes
-    ys = uniqueLats[1] - uniqueLats[0] 
-    xs = uniqueLons[1] - uniqueLons[0]
+	# get data from df as arrays
+	lons = np.array(df.longitude)
+	lats = np.array(df.latitude)
+	data = np.array(df[variable]) # Set var here 
+											  
+	# get the unique coordinates
+	uniqueLats = np.unique(lats)
+	uniqueLons = np.unique(lons)
 
-    # create an array with dimensions of image
-    arr = np.zeros([nrows, ncols], np.float32)
+	# get number of columns and rows from coordinates
+	ncols = len(uniqueLons)    
+	nrows = len(uniqueLats)
 
-    # fill the array with values
-    counter =0
-    for y in range(0,len(arr),1):
-        for x in range(0,len(arr[0]),1):
-            if lats[counter] == uniqueLats[y] and lons[counter] == uniqueLons[x] and counter < len(lats)-1:
-                counter+=1
-                arr[len(uniqueLats)-1-y,x] = data[counter] # we start from lower left corner
-    
-    return arr
+	# determine pixelsizes
+	ys = uniqueLats[1] - uniqueLats[0] 
+	xs = uniqueLons[1] - uniqueLons[0]
 
+	# create an array with dimensions of image
+	arr = np.zeros([nrows, ncols], np.float32)
 
+	# fill the array with values
+	counter =0
+	for y in range(0,len(arr),1):
+		for x in range(0,len(arr[0]),1):
+			if lats[counter] == uniqueLats[y] and lons[counter] == uniqueLons[x] and counter < len(lats)-1:
+				counter+=1
+				arr[len(uniqueLats)-1-y,x] = data[counter] # we start from lower left corner
+	
+	return arr
 
 
 
@@ -371,7 +395,6 @@ def load_data():
 	##### ET data #####
 	###################
 
-
 	# https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD16A2
 	data['modis_aet'] = [ee.ImageCollection('MODIS/006/MOD16A2'), "ET", 0.1]
 	data['modis_pet'] = [ee.ImageCollection('MODIS/006/MOD16A2'), "PET", 0.1]
@@ -398,32 +421,17 @@ def load_data():
 	###################
 
 	data['trmm']  =  [ee.ImageCollection('TRMM/3B43V7'), "precipitation", 720]
-	data['prism'] = [ee.ImageCollection("OREGONSTATE/PRISM/AN81m"), "ppt", 1]
-	data['chirps'] = [ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD'), "precipitation", 1]
+	data['prism'] = [ee.ImageCollection("OREGONSTATE/PRISM/AN81m"), "ppt", 1, 4000]
+	data['chirps'] = [ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD'), "precipitation", 1, 5500]
 	data['persia'] = [ee.ImageCollection("NOAA/PERSIANN-CDR"), "precipitation", 1]
-	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1]
+	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1, 1000]
 
-	###################
+	#################### 
 	##### SWE data #####
 	####################
 	data['fldas_swe'] = [ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001'), "SWE_inst", 1 , 12500]
 	data['gldas_swe'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "SWE_inst", 1 / 240 , 25000]
 	data['dmet_swe'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "swe", 1]
-
-	####################
-	##### DS data ######
-	####################
-	data['jpl'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_jpl",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
-
-	data['csr'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_csr",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
-
-	data['gfz'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_gfz",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
-
-	data['mas'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "lwe_thickness", 1] 
-	data['mas_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "uncertainty", 1] 
-
-	data['cri'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "lwe_thickness", 1] 
-	data['cri_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "uncerrtainty", 1] 
 
 
 	####################
@@ -457,6 +465,39 @@ def load_data():
 	data['smap_ssm'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "ssm", 1 ,25000]
 	data['smap_susm'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "susm", 1 ,25000]
 	data['smap_smp'] = [ee.ImageCollection("NASA_USDA/HSL/SMAP_soil_moisture"), "smp", 1 ,25000]
+
+	############################
+	##### Elevation data #######
+	############################
+
+	data['srtm'] = [ee.Image("CGIAR/SRTM90_V4"), "elevation", 1 ,25000]
+
+	#########################
+	##### Gravity data ######
+	#########################
+	data['jpl'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_jpl",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+	data['csr'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_csr",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+	data['gfz'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/LAND'), "lwe_thickness_gfz",  ee.Image("NASA/GRACE/MASS_GRIDS/LAND_AUX_2014").select("SCALE_FACTOR")]
+
+	data['mas'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "lwe_thickness", 1] 
+	data['mas_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON'), "uncertainty", 1] 
+
+	data['cri'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "lwe_thickness", 1] 
+	data['cri_unc'] = [ee.ImageCollection('NASA/GRACE/MASS_GRIDS/MASCON_CRI'), "uncerrtainty", 1] 
+
+
+	#########################
+	##### Optical data ######
+	#########################
+
+	data['modis_snow1'] = [ee.ImageCollection('MODIS/006/MOD10A1'), "NDSI_Snow_Cover",  1, 500] 
+	data['modis_snow2'] = [ee.ImageCollection('MODIS/006/MYD10A1'), "NDSI_Snow_Cover",  1, 500] 
+	data['modis_ndvi'] = [ee.ImageCollection('MODIS/MCD43A4_NDVI'), "NDVI",  1, 500] 
+
+	data['landsat_8_b1'] = [ee.ImageCollection('LANDSAT/LC08/C01/T1_SR'), "B1" ,  0.001, 30] 
+
+	
+
 	return data
 
 def cdl_2_faunt():
