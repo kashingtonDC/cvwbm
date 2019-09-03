@@ -138,8 +138,13 @@ def calc_monthly_sum(dataset, years, months, area):
 	
 	sums = []
 	seq = ee.List.sequence(0, len(dt_idx))
+
+	num_steps = seq.getInfo()
+
+	for i in num_steps:
+		if i % 5 == 0:
+			print(str((i / len(num_steps))*100)[:5] + " % ")
 	
-	for i in seq.getInfo():
 		start = ee.Date(start_date).advance(i, 'month')
 		end = start.advance(1, 'month');
 		im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).sum().set('system:time_start', start.millis())
@@ -151,8 +156,8 @@ def calc_monthly_sum(dataset, years, months, area):
 			geometry = area,
 			scale = scale,
 			bestEffort = True)
+		
 		total = sumdict.getInfo()[var]
-		print(total)
 		sums.append(total)
 
 	return sums
@@ -222,7 +227,7 @@ def get_ims(dataset, years, months, area, return_dates = False, table = False, m
 
 		start = ee.Date(start_date).advance(i, 'month')
 		end = start.advance(1, 'month');
-		
+
 		if monthly_mean:
 			im1 = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).set('system:time_start', start.millis()).mean()
 			im = ee.ImageCollection(im1)
