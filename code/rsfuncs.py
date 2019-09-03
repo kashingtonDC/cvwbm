@@ -191,7 +191,7 @@ def grace_wrapper(dataset):
 	print("wrapper complete")
 	return monthly
 
-def get_ims(dataset, years, months, area, return_dates = False, table = False):
+def get_ims(dataset, years, months, area, return_dates = False, table = False, monthly_mean = False):
 	
 	'''
 	Returns gridded images for EE datasets 
@@ -222,7 +222,13 @@ def get_ims(dataset, years, months, area, return_dates = False, table = False):
 
 		start = ee.Date(start_date).advance(i, 'month')
 		end = start.advance(1, 'month');
-		im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).set('system:time_start', start.millis())
+		
+		if monthly_mean:
+			im1 = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).set('system:time_start', start.millis()).mean()
+			im = ee.ImageCollection(im1)
+		else:
+			im = ee.ImageCollection(ImageCollection).select(var).filterDate(start, end).set('system:time_start', start.millis())
+		
 		result = im.getRegion(area,native_res,"epsg:4326").getInfo()
 		ims.append(result)
 
@@ -420,19 +426,18 @@ def load_data():
 	##### P data ######
 	###################
 
-	data['trmm']  =  [ee.ImageCollection('TRMM/3B43V7'), "precipitation", 720]
+	data['trmm']  =  [ee.ImageCollection('TRMM/3B43V7'), "precipitation", 720, 25000]
 	data['prism'] = [ee.ImageCollection("OREGONSTATE/PRISM/AN81m"), "ppt", 1, 4000]
 	data['chirps'] = [ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD'), "precipitation", 1, 5500]
-	data['persia'] = [ee.ImageCollection("NOAA/PERSIANN-CDR"), "precipitation", 1]
-	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1, 1000]
+	data['persia'] = [ee.ImageCollection("NOAA/PERSIANN-CDR"), "precipitation", 1, 25000]
+	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1, 4000]
 
 	#################### 
 	##### SWE data #####
 	####################
 	data['fldas_swe'] = [ee.ImageCollection('NASA/FLDAS/NOAH01/C/GL/M/V001'), "SWE_inst", 1 , 12500]
 	data['gldas_swe'] = [ee.ImageCollection('NASA/GLDAS/V021/NOAH/G025/T3H'), "SWE_inst", 1 / 240 , 25000]
-	data['dmet_swe'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "swe", 1]
-
+	data['dmet_swe'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "swe", 1, 4000] # Reduced from 1000 because the query times out over the whole CVW 
 
 	####################
 	##### R data #######
@@ -470,7 +475,7 @@ def load_data():
 	##### Elevation data #######
 	############################
 
-	data['srtm'] = [ee.Image("CGIAR/SRTM90_V4"), "elevation", 1 ,25000]
+	data['srtm'] = [ee.Image("CGIAR/SRTM90_V4"), "elevation", 1 ,1000]
 
 	#########################
 	##### Gravity data ######
@@ -490,8 +495,8 @@ def load_data():
 	##### Optical data ######
 	#########################
 
-	data['modis_snow1'] = [ee.ImageCollection('MODIS/006/MOD10A1'), "NDSI_Snow_Cover",  1, 500] 
-	data['modis_snow2'] = [ee.ImageCollection('MODIS/006/MYD10A1'), "NDSI_Snow_Cover",  1, 500] 
+	data['modis_snow1'] = [ee.ImageCollection('MODIS/006/MOD10A1'), "NDSI_Snow_Cover",  1, 2500] # reduced resolution  
+	data['modis_snow2'] = [ee.ImageCollection('MODIS/006/MYD10A1'), "NDSI_Snow_Cover",  1, 2500]  # reduced resolution 
 	data['modis_ndvi'] = [ee.ImageCollection('MODIS/MCD43A4_NDVI'), "NDVI",  1, 500] 
 
 	data['landsat_8_b1'] = [ee.ImageCollection('LANDSAT/LC08/C01/T1_SR'), "B1" ,  0.001, 30] 
