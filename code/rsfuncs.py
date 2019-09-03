@@ -139,7 +139,11 @@ def calc_monthly_sum(dataset, years, months, area):
 	sums = []
 	seq = ee.List.sequence(0, len(dt_idx))
 
+	# Progress bar 
 	num_steps = seq.getInfo()
+	print("processing:")
+	print("{}".format(ImageCollection))
+	print("progress:")
 
 	for i in num_steps:
 		if i % 5 == 0:
@@ -156,7 +160,7 @@ def calc_monthly_sum(dataset, years, months, area):
 			geometry = area,
 			scale = scale,
 			bestEffort = True)
-		
+
 		total = sumdict.getInfo()[var]
 		sums.append(total)
 
