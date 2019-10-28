@@ -41,11 +41,17 @@ rm -rf Shapefiles Shapefiles.zip
 
 # DATA
 
+## Detailed Analysis Units - DWR
+[https://github.com/CSTARS/dwr-dau](https://github.com/CSTARS/dwr-dau)
+
+## Applied water, ET - CALSIM DWR
+[https://data.ca.gov/dataset/cal-simetaw-unit-values](https://data.ca.gov/dataset/cal-simetaw-unit-values)
+
 ## Crop Coefficients - USGS
 [https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip](https://water.usgs.gov/GIS/dsdl/pp1766_fmp_parameters.zip)
 
 ## Crop Areas - DWR
-[https://data.cnra.ca.gov/dataset/crop-mapping-2014] (https://data.cnra.ca.gov/dataset/crop-mapping-2014)
+[https://data.cnra.ca.gov/dataset/crop-mapping-2014](https://data.cnra.ca.gov/dataset/crop-mapping-2014)
 
 ## Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
