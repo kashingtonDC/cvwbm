@@ -1,6 +1,6 @@
 /rasters
 /nhd
-/shape
+# /shape
 /code/.ipynb_checkpoints/
 /shape/.DS_Store
 .ipynb_checkpoints/
