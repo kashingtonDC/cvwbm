@@ -52,6 +52,7 @@ rm -rf Shapefiles Shapefiles.zip
 
 ## Crop Areas - DWR
 [https://data.cnra.ca.gov/dataset/crop-mapping-2014](https://data.cnra.ca.gov/dataset/crop-mapping-2014)
+[https://opendata.arcgis.com/datasets/f4f00986f1e141cc99cff221391084de_0.zip](https://opendata.arcgis.com/datasets/f4f00986f1e141cc99cff221391084de_0.zip)
 
 ## Reservoirs Data - California Data Exchange Center
 [http://cdec.water.ca.gov/misc/monthlyStations.html](http://cdec.water.ca.gov/misc/monthlyStations.html) 
@@ -71,6 +72,7 @@ rm -rf Shapefiles Shapefiles.zip
 ## CVHM Texture model - USGS
 [cvhm texture data](https://ca.water.usgs.gov/projects/central-valley/well-log-texture.xls)
 
+## CVHM
 [faunt, 2009 model files](https://water.usgs.gov/GIS/dsdl/gwmodels/PP2009-1766/model.zip)
 
 ## Major Rivers - CNRA
