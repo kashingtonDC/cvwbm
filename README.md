@@ -69,6 +69,9 @@ rm -rf Shapefiles Shapefiles.zip
 ## Well data - DWR Casgem 
 [casgem](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
 
+## Water Table Elevations (GAMA)
+[GAMA](https://gamagroundwater.waterboards.ca.gov/gama/datadownload) 
+
 ## CVHM Texture model - USGS
 [cvhm texture data](https://ca.water.usgs.gov/projects/central-valley/well-log-texture.xls)
 
