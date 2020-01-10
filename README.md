@@ -39,6 +39,12 @@ rm -rf Shapefiles Shapefiles.zip
 
 ```
 
+
+# SSEBOP ET data 
+[https://cida.usgs.gov/thredds/ncss/ssebopeta/monthly?var=et&north=42.003728&west=-123.217338&east=-117.959444&south=34.459646&horizStride=1&time_start=2000-01-01T00%3A00%3A00Z&time_end=2019-10-01T00%3A00%3A00Z&timeStride=1&addLatLon=true](data)
+
+
+
 # DATA
 
 ## Detailed Analysis Units - DWR
